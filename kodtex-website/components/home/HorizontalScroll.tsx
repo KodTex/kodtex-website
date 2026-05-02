@@ -1,8 +1,7 @@
 "use client";
 
-import { useRef } from "react";
-import { useScroll, useTransform, motion } from "motion/react";
 import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
 import { categories } from "@/data/categories";
 
 const categoryImages: Record<string, string> = {
@@ -15,98 +14,48 @@ const categoryImages: Record<string, string> = {
   furnishing: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
 };
 
-interface ProgressDotProps {
-  scrollYProgress: ReturnType<typeof useScroll>["scrollYProgress"];
-  index: number;
-  total: number;
-}
-
-function ProgressDot({ scrollYProgress, index, total }: ProgressDotProps) {
-  const dotProgress = useTransform(
-    scrollYProgress,
-    [index / total, (index + 1) / total],
-    [0, 1]
-  );
-  return (
-    <div className="relative w-6 h-1 bg-white/20 rounded-full overflow-hidden">
-      <motion.div
-        className="absolute inset-y-0 left-0 bg-white rounded-full"
-        style={{ scaleX: dotProgress, transformOrigin: "left" }}
-      />
-    </div>
-  );
-}
-
 function DesktopHorizontalScroll() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
-
-  const x = useTransform(
-    scrollYProgress,
-    [0, 1],
-    ["0%", `-${(categories.length - 1) * 100}vw`]
-  );
+  const shouldReduceMotion = useReducedMotion();
 
   return (
-    <section ref={containerRef} className="relative hidden md:block" style={{ height: `${categories.length * 100}vh` }}>
-      <div className="sticky top-0 h-screen overflow-hidden">
-        {/* Section header */}
-        <div className="absolute top-8 left-10 z-20">
-          <span className="text-xs font-medium tracking-[0.12em] uppercase text-white/50 block mb-1">
-            Explore
-          </span>
-          <h2 className="font-heading text-3xl text-white">Our Range</h2>
-        </div>
+    <section className="relative hidden md:block bg-charcoal overflow-hidden py-16">
+      <div className="max-w-[1320px] mx-auto px-10 mb-10">
+        <span className="text-xs font-medium tracking-[0.12em] uppercase text-white/50 block mb-1">
+          Explore
+        </span>
+        <h2 className="font-heading text-3xl text-white">Our Range</h2>
+      </div>
 
-        {/* Progress dots */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          {categories.map((_, i) => (
-            <ProgressDot
-              key={i}
-              scrollYProgress={scrollYProgress}
-              index={i}
-              total={categories.length}
-            />
-          ))}
-        </div>
-
-        {/* Scrolling panels */}
+      <div className="overflow-hidden">
         <motion.div
-          className="flex h-full"
-          style={{ x, width: `${categories.length * 100}vw` }}
+          className="flex"
+          style={{ width: "max-content" }}
+          animate={shouldReduceMotion ? {} : { x: ["0%", "-50%"] }}
+          transition={{ duration: 50, repeat: Infinity, ease: "linear", repeatType: "loop" }}
         >
-          {categories.map((cat) => (
-            <div
-              key={cat.slug}
-              className="relative w-screen h-screen flex-shrink-0 overflow-hidden"
+          {[...categories, ...categories].map((cat, i) => (
+            <Link
+              key={i}
+              href={`/fabrics/${cat.slug}`}
+              className="relative flex-shrink-0 w-[380px] h-[480px] mx-3 overflow-hidden group block"
             >
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
                 style={{ backgroundImage: `url('${categoryImages[cat.slug]}')` }}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/30 to-warm-black/20" />
-              <div className="absolute bottom-24 left-20 max-w-lg">
-                <span className="text-xs font-medium tracking-[0.15em] uppercase text-white/50 block mb-3">
+              <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/20 to-transparent" />
+              <div className="absolute bottom-8 left-7">
+                <span className="text-white/50 text-[10px] font-medium tracking-[0.15em] uppercase block mb-1">
                   {cat.slug}
                 </span>
-                <h3 className="font-heading text-6xl text-white leading-none mb-4">
+                <h3 className="font-heading text-4xl text-white leading-none mb-2">
                   {cat.label}
                 </h3>
-                <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                  {cat.description}
-                </p>
-                <Link
-                  href={`/fabrics/${cat.slug}`}
-                  className="inline-flex items-center gap-2 border border-white/60 text-white text-sm font-medium tracking-wide px-6 py-3 hover:bg-white/10 hover:border-white/80 transition-all"
-                >
-                  Explore {cat.label}
-                  <span aria-hidden>→</span>
-                </Link>
+                <span className="text-white/60 text-xs font-medium tracking-wide group-hover:text-white transition-colors">
+                  Explore →
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </motion.div>
       </div>

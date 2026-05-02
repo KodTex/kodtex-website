@@ -118,6 +118,12 @@
   animation: marquee 28s linear infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}
+
 /* Grain texture overlay */
 .grain-overlay::after {
   content: '';
