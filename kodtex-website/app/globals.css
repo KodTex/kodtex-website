@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* KodTex Brand Colors */
+  --color-ivory: #F5F1EB;
+  --color-charcoal: #1A1E26;
+  --color-terracotta: #C25C35;
+  --color-sage: #6B7D6A;
+  --color-sand: #CDB99A;
+  --color-linen-white: #FAFAF7;
+  --color-deep-slate: #2D3340;
+  --color-warm-black: #0F0E0C;
+  --color-terracotta-light: #D4795A;
+  --color-terracotta-dark: #A34828;
+
+  /* shadcn token mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-dm-sans);
+  --font-heading: var(--font-playfair);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  --background: #F5F1EB;
+  --foreground: #1A1E26;
+  --card: #FAFAF7;
+  --card-foreground: #1A1E26;
+  --popover: #FAFAF7;
+  --popover-foreground: #1A1E26;
+  --primary: #C25C35;
+  --primary-foreground: #FAFAF7;
+  --secondary: #CDB99A;
+  --secondary-foreground: #1A1E26;
+  --muted: #EDE8E0;
+  --muted-foreground: #6B7D6A;
+  --accent: #6B7D6A;
+  --accent-foreground: #FAFAF7;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #CDB99A;
+  --input: #EDE8E0;
+  --ring: #C25C35;
+  --radius: 0.375rem;
+  --sidebar: #FAFAF7;
+  --sidebar-foreground: #1A1E26;
+  --sidebar-primary: #C25C35;
+  --sidebar-primary-foreground: #FAFAF7;
+  --sidebar-accent: #EDE8E0;
+  --sidebar-accent-foreground: #1A1E26;
+  --sidebar-border: #CDB99A;
+  --sidebar-ring: #C25C35;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-ivory text-charcoal antialiased;
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  h1, h2 {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+
+/* Grain texture overlay */
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F1EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #CDB99A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C25C35;
+}
+
+/* Focus ring style */
+:focus-visible {
+  outline: 2px solid #C25C35;
+  outline-offset: 2px;
+}
