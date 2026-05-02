@@ -6,6 +6,9 @@ import { wa } from "@/lib/whatsapp";
 import { ChevronDown } from "lucide-react";
 
 const heroWords = ["Fabric,", "your", "way."];
+const heroWordClasses: Record<string, string> = {
+  "way.": "text-gradient",
+};
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -29,6 +32,8 @@ export default function Hero() {
         />
         {/* Dark overlay for text legibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-warm-black/60 via-warm-black/50 to-warm-black/70" />
+        {/* Subtle warm terracotta radial accent */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(194,92,53,0.12)_0%,transparent_60%)]" />
         {/* Grain texture */}
         <div className="absolute inset-0 opacity-20 mix-blend-overlay"
           style={{
@@ -42,20 +47,22 @@ export default function Hero() {
         className="relative z-10 max-w-[1320px] mx-auto px-6 md:px-10 w-full flex flex-col items-start justify-center"
         style={{ opacity: contentOpacity, y: contentY }}
       >
-        <motion.span
-          className="text-xs font-medium tracking-[0.15em] uppercase text-terracotta-light mb-6 block"
+        <motion.div
+          className="mb-6 inline-flex"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          Premium Fabrics · Est. 1954
-        </motion.span>
+          <span className="glass-dark rounded-full px-4 py-1.5 text-[11px] font-medium tracking-[0.12em] uppercase text-white/75 animate-float">
+            ✦ No minimum order · Free samples available
+          </span>
+        </motion.div>
 
         <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none mb-8">
           {heroWords.map((word, i) => (
             <motion.span
               key={word}
-              className="block"
+              className={`block ${heroWordClasses[word] ?? ""}`}
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -87,7 +94,7 @@ export default function Hero() {
         >
           <Link
             href="/fabrics"
-            className="bg-terracotta text-white text-sm font-semibold tracking-wide px-7 py-3.5 hover:bg-terracotta-dark transition-colors inline-flex items-center gap-2"
+            className="bg-gradient-to-r from-terracotta to-[#E8834E] text-white text-sm font-semibold tracking-wide px-7 py-3.5 hover:opacity-90 transition-opacity inline-flex items-center gap-2 rounded-sm shadow-[0_4px_24px_rgba(194,92,53,0.4)]"
           >
             Explore Fabrics
             <span aria-hidden>→</span>
@@ -102,33 +109,33 @@ export default function Hero() {
           </a>
         </motion.div>
 
-        {/* Hero bottom-left: No MOQ tag */}
+        {/* Hero bottom-left: heritage tag */}
         <motion.div
           className="mt-16 flex items-center gap-3"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
         >
-          <div className="h-px w-8 bg-white/30" />
+          <div className="h-px w-8 bg-terracotta/60" />
           <span className="text-white/50 text-xs tracking-wide">
-            No minimum order · Fully customisable
+            Premium Fabrics · Est. 1954 · Ahmedabad
           </span>
         </motion.div>
       </motion.div>
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/40"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
       >
+        <span className="text-white/30 text-[10px] tracking-[0.2em] uppercase font-medium">scroll</span>
         <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <ChevronDown size={20} />
-        </motion.div>
+          className="w-px h-8 bg-gradient-to-b from-white/40 to-transparent"
+          animate={{ scaleY: [0, 1, 0], originY: 0 }}
+          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+        />
       </motion.div>
     </section>
   );

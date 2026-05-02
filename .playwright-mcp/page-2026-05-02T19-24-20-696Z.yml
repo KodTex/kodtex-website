@@ -1,0 +1,137 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - button "Toggle menu" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Knowledge Base
+        - heading "The Fabric Guide" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Everything you need to know about fabrics — from choosing the right wale count to caring for linen. Written for makers.
+      - generic [ref=e17]:
+        - link "The Complete Guide to Corduroy Fabric Fabric Guide · 6 min read The Complete Guide to Corduroy Fabric Everything you need to know about corduroy — wale counts, compositions, care instructions, and how to choose the right corduroy for your project. Read article →" [ref=e19] [cursor=pointer]:
+          - /url: /blog/corduroy-guide
+          - img "The Complete Guide to Corduroy Fabric" [ref=e21]
+          - generic [ref=e22]:
+            - generic [ref=e23]: Fabric Guide
+            - generic [ref=e24]: ·
+            - generic [ref=e25]: 6 min read
+          - heading "The Complete Guide to Corduroy Fabric" [level=2] [ref=e26]
+          - paragraph [ref=e27]: Everything you need to know about corduroy — wale counts, compositions, care instructions, and how to choose the right corduroy for your project.
+          - generic [ref=e28]: Read article →
+        - 'link "Pure Linen: Why It''s Worth It Fabric Guide · 5 min read Pure Linen: Why It''s Worth It Linen gets better with every wash. Here''s what makes it special, how to care for it, and when to choose linen over cotton. Read article →" [ref=e30] [cursor=pointer]':
+          - /url: /blog/linen-guide
+          - 'img "Pure Linen: Why It''s Worth It" [ref=e32]'
+          - generic [ref=e33]:
+            - generic [ref=e34]: Fabric Guide
+            - generic [ref=e35]: ·
+            - generic [ref=e36]: 5 min read
+          - 'heading "Pure Linen: Why It''s Worth It" [level=2] [ref=e37]'
+          - paragraph [ref=e38]: Linen gets better with every wash. Here's what makes it special, how to care for it, and when to choose linen over cotton.
+          - generic [ref=e39]: Read article →
+        - link "How to Care for Your Fabrics Care & Maintenance · 4 min read How to Care for Your Fabrics Simple, practical guidance on washing, drying, and ironing cotton, linen, corduroy, and twill fabrics to keep them looking their best. Read article →" [ref=e41] [cursor=pointer]:
+          - /url: /blog/fabric-care
+          - img "How to Care for Your Fabrics" [ref=e43]
+          - generic [ref=e44]:
+            - generic [ref=e45]: Care & Maintenance
+            - generic [ref=e46]: ·
+            - generic [ref=e47]: 4 min read
+          - heading "How to Care for Your Fabrics" [level=2] [ref=e48]
+          - paragraph [ref=e49]: Simple, practical guidance on washing, drying, and ironing cotton, linen, corduroy, and twill fabrics to keep them looking their best.
+          - generic [ref=e50]: Read article →
+  - contentinfo [ref=e51]:
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - link "KodTex" [ref=e55] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e56]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e57]:
+            - link "vivekk.men@gmail.com" [ref=e58] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e59]
+              - text: vivekk.men@gmail.com
+            - link "+91 7990273955" [ref=e62] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e63]
+              - text: +91 7990273955
+            - generic [ref=e65]:
+              - img [ref=e66]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e69]:
+            - link "KodTex Instagram" [ref=e70] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e71]
+            - link "WhatsApp" [ref=e75] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e76]:
+          - heading "Fabrics" [level=4] [ref=e77]
+          - list [ref=e78]:
+            - listitem [ref=e79]:
+              - link "Corduroy" [ref=e80] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e81]:
+              - link "Linen" [ref=e82] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e83]:
+              - link "Cotton" [ref=e84] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e85]:
+              - link "Twill" [ref=e86] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e87]:
+              - link "Shirting" [ref=e88] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e89]:
+              - link "Suiting" [ref=e90] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e91]:
+              - link "Furnishing" [ref=e92] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e93]:
+          - heading "Company" [level=4] [ref=e94]
+          - list [ref=e95]:
+            - listitem [ref=e96]:
+              - link "About KodTex" [ref=e97] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e98]:
+              - link "Trade & Bulk" [ref=e99] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e100]:
+              - link "Contact Us" [ref=e101] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e102]:
+              - link "FAQ" [ref=e103] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e104]:
+          - heading "Fabric Guide" [level=4] [ref=e105]
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - link "The Fabric Guide" [ref=e108] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e109]:
+              - link "Corduroy Guide" [ref=e110] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e111]:
+              - link "Linen Guide" [ref=e112] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e113]:
+              - link "Fabric Care" [ref=e114] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e115]:
+        - paragraph [ref=e116]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e117] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e118]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp" [ref=e119] [cursor=pointer]:
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+    - img [ref=e121]
+  - button "Open Next.js Dev Tools" [ref=e128] [cursor=pointer]:
+    - img [ref=e129]
+  - alert [ref=e132]

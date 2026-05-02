@@ -1,0 +1,426 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - button "Toggle menu" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Premium Fabrics · Est. 1954
+        - heading "Fabric, your way." [level=1] [ref=e16]:
+          - generic [ref=e17]: Fabric,
+          - generic [ref=e18]: your
+          - generic [ref=e19]: way.
+        - paragraph [ref=e20]: Premium corduroy, linen, and cotton — backed by 70 years of Kailash Vivek & Co.
+        - generic [ref=e21]:
+          - link "Explore Fabrics" [ref=e22] [cursor=pointer]:
+            - /url: /fabrics
+            - text: Explore Fabrics
+            - generic [ref=e23]: →
+          - link "WhatsApp Us" [ref=e24] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e27]: No minimum order · Fully customisable
+      - img [ref=e30]
+    - generic [ref=e33]:
+      - generic [ref=e35]: CORDUROY · LINEN · COTTON · TWILL · SHIRTING · SUITING · FURNISHING · NO MINIMUM ORDER · CUSTOMISE EVERY ORDER · SINCE 1954 · AHMEDABAD, GUJARAT · ISO 9001:2008 · CORDUROY · LINEN · COTTON · TWILL · SHIRTING · SUITING · FURNISHING · NO MINIMUM ORDER · CUSTOMISE EVERY ORDER · SINCE 1954 · AHMEDABAD, GUJARAT · ISO 9001:2008 ·
+      - generic [ref=e37]: CORDUROY · LINEN · COTTON · TWILL · SHIRTING · SUITING · FURNISHING · NO MINIMUM ORDER · CUSTOMISE EVERY ORDER · SINCE 1954 · AHMEDABAD, GUJARAT · ISO 9001:2008 · CORDUROY · LINEN · COTTON · TWILL · SHIRTING · SUITING · FURNISHING · NO MINIMUM ORDER · CUSTOMISE EVERY ORDER · SINCE 1954 · AHMEDABAD, GUJARAT · ISO 9001:2008 ·
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - generic [ref=e43]: Est. 1954
+        - generic [ref=e44]: Textile Heritage
+      - generic [ref=e45]:
+        - generic [ref=e46]: ISO 9001:2008
+        - generic [ref=e47]: Quality Certified
+      - generic [ref=e48]:
+        - generic [ref=e49]: Kailash Vivek & Co.
+        - generic [ref=e50]: Backed By
+      - generic [ref=e51]:
+        - generic [ref=e52]: Ahmedabad, Gujarat
+        - generic [ref=e53]: Made in India
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]: Our Story
+        - heading "From Ahmedabad, since 1954." [level=2] [ref=e59]:
+          - text: From Ahmedabad,
+          - text: since 1954.
+        - paragraph [ref=e60]: What is now KodTex began as Kailash Vivek & Co. — a textile business founded in the heart of Ahmedabad's fabric district in 1954. Seventy years of mastering every aspect of textile manufacturing, trading, and quality.
+        - paragraph [ref=e61]: KodTex is that heritage made direct-to-you. The same ISO-certified quality, the same depth of range — now with no middlemen, no minimums, and a WhatsApp away.
+        - generic [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e65]: 0+
+            - generic [ref=e66]: Years of craft
+          - generic [ref=e67]:
+            - generic [ref=e69]: 0+
+            - generic [ref=e70]: Fabric variants
+          - generic [ref=e71]:
+            - generic [ref=e72]: "0"
+            - generic [ref=e73]: Minimum order
+      - generic [ref=e75]:
+        - img "Fabric rolls at Kailash Vivek & Co. warehouse" [ref=e76]
+        - generic [ref=e77]:
+          - generic [ref=e78]: "1954"
+          - generic [ref=e79]: Year Founded
+          - generic [ref=e80]:
+            - text: Kailash Vivek & Co.
+            - text: Ahmedabad, Gujarat
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]: Explore
+        - heading "Our Range" [level=2] [ref=e84]
+      - generic [ref=e85]:
+        - generic [ref=e89]:
+          - generic [ref=e90]: corduroy
+          - heading "Corduroy" [level=3] [ref=e91]
+          - paragraph [ref=e92]: India's widest corduroy range. 4-wale to 21-wale.
+          - link "Explore Corduroy" [ref=e93] [cursor=pointer]:
+            - /url: /fabrics/corduroy
+            - text: Explore Corduroy
+            - generic [ref=e94]: →
+        - generic [ref=e98]:
+          - generic [ref=e99]: linen
+          - heading "Linen" [level=3] [ref=e100]
+          - paragraph [ref=e101]: Pure linen and linen blends. Honest, breathable, natural.
+          - link "Explore Linen" [ref=e102] [cursor=pointer]:
+            - /url: /fabrics/linen
+            - text: Explore Linen
+            - generic [ref=e103]: →
+        - generic [ref=e107]:
+          - generic [ref=e108]: cotton
+          - heading "Cotton" [level=3] [ref=e109]
+          - paragraph [ref=e110]: 100% cotton in every weight and weave.
+          - link "Explore Cotton" [ref=e111] [cursor=pointer]:
+            - /url: /fabrics/cotton
+            - text: Explore Cotton
+            - generic [ref=e112]: →
+        - generic [ref=e116]:
+          - generic [ref=e117]: twill
+          - heading "Twill" [level=3] [ref=e118]
+          - paragraph [ref=e119]: The diagonal weave that tailors trust.
+          - link "Explore Twill" [ref=e120] [cursor=pointer]:
+            - /url: /fabrics/twill
+            - text: Explore Twill
+            - generic [ref=e121]: →
+        - generic [ref=e125]:
+          - generic [ref=e126]: shirting
+          - heading "Shirting" [level=3] [ref=e127]
+          - paragraph [ref=e128]: Premium shirting fabrics for tailors and designers.
+          - link "Explore Shirting" [ref=e129] [cursor=pointer]:
+            - /url: /fabrics/shirting
+            - text: Explore Shirting
+            - generic [ref=e130]: →
+        - generic [ref=e134]:
+          - generic [ref=e135]: suiting
+          - heading "Suiting" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Structured, elegant suiting for tailored work.
+          - link "Explore Suiting" [ref=e138] [cursor=pointer]:
+            - /url: /fabrics/suiting
+            - text: Explore Suiting
+            - generic [ref=e139]: →
+        - generic [ref=e143]:
+          - generic [ref=e144]: furnishing
+          - heading "Furnishing" [level=3] [ref=e145]
+          - paragraph [ref=e146]: Heavy-duty fabrics built for interior applications.
+          - link "Explore Furnishing" [ref=e147] [cursor=pointer]:
+            - /url: /fabrics/furnishing
+            - text: Explore Furnishing
+            - generic [ref=e148]: →
+    - generic [ref=e151]:
+      - img "Close-up of corduroy wale texture" [ref=e153]
+      - generic [ref=e154]:
+        - generic [ref=e155]: Hero Fabric
+        - heading "India's widest corduroy range." [level=2] [ref=e156]
+        - paragraph [ref=e157]: 4-wale to 21-wale. Structured, dobby, stretch, yarn-dyed, indigo wash. Every finish for every application. Built on decades of corduroy expertise from Kailash Vivek & Co.
+        - generic [ref=e158]:
+          - generic [ref=e159]: 4-wale
+          - generic [ref=e160]: 8-wale
+          - generic [ref=e161]: 14-wale
+          - generic [ref=e162]: 21-wale
+          - generic [ref=e163]: Stretch
+          - generic [ref=e164]: Yarn-dyed
+          - generic [ref=e165]: Indigo
+        - link "Explore Corduroy" [ref=e166] [cursor=pointer]:
+          - /url: /fabrics/corduroy
+          - text: Explore Corduroy
+          - generic [ref=e167]: →
+    - generic [ref=e170]:
+      - img "Close-up of linen slub texture" [ref=e172]
+      - generic [ref=e173]:
+        - generic [ref=e174]: Pure & Natural
+        - heading "Pure linen. Honest fabric." [level=2] [ref=e175]
+        - paragraph [ref=e176]: Natural, breathable, authentic. Linen's natural slub texture makes every length unique. Our pure linen and linen-cotton blends get softer with every wash — built for makers who appreciate honest materials.
+        - link "Explore Linen" [ref=e177] [cursor=pointer]:
+          - /url: /fabrics/linen
+          - text: Explore Linen
+          - generic [ref=e178]: →
+    - generic [ref=e180]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: Why KodTex
+        - heading "Made for makers. No rules, no minimums." [level=2] [ref=e184]
+        - paragraph [ref=e185]: We built KodTex for people who take fabric seriously — whether you make one piece or a hundred.
+      - generic [ref=e186]:
+        - generic [ref=e188]:
+          - generic [ref=e189]: "01"
+          - heading "No Minimum OrderKEY USP" [level=3] [ref=e190]
+          - paragraph [ref=e191]: Order 1 metre or 1000. Every order matters.
+        - generic [ref=e193]:
+          - generic [ref=e194]: "02"
+          - heading "Fully Customisable" [level=3] [ref=e195]
+          - paragraph [ref=e196]: Colour, length, finish — specify exactly what you need.
+        - generic [ref=e198]:
+          - generic [ref=e199]: "03"
+          - heading "Samples Available" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Order shade charts or small cuts before committing.
+        - generic [ref=e203]:
+          - generic [ref=e204]: "04"
+          - heading "Fast Pan-India Delivery" [level=3] [ref=e205]
+          - paragraph [ref=e206]: Tracked shipping. Quick turnaround from Ahmedabad.
+        - generic [ref=e208]:
+          - generic [ref=e209]: "05"
+          - heading "70 Years of Expertise" [level=3] [ref=e210]
+          - paragraph [ref=e211]: ISO certified. Kailash Vivek & Co. heritage in every bolt.
+        - generic [ref=e213]:
+          - generic [ref=e214]: "06"
+          - heading "International Shipping" [level=3] [ref=e215]
+          - paragraph [ref=e216]: India is home. The world is open. We ship globally.
+    - generic [ref=e218]:
+      - generic [ref=e220]:
+        - generic [ref=e221]: Who we serve
+        - heading "Whether you make one piece or a hundred." [level=2] [ref=e222]
+        - paragraph [ref=e223]: KodTex is built for every kind of maker — no gatekeeping, no minimums.
+      - generic [ref=e225]:
+        - generic [ref=e227]:
+          - generic [ref=e228]: 🧵
+          - heading "Individual Buyers" [level=3] [ref=e229]
+          - paragraph [ref=e230]: Making one garment or one cushion? Order exactly what you need. No pressure, no minimums.
+          - link "Talk to us →" [ref=e231] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e233]:
+          - generic [ref=e234]: ✂️
+          - heading "Tailors" [level=3] [ref=e235]
+          - paragraph [ref=e236]: Reliable quality, consistent colour runs, and enough range to satisfy any client's brief.
+          - link "Talk to us →" [ref=e237] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e239]:
+          - generic [ref=e240]: 👗
+          - heading "Designers" [level=3] [ref=e241]
+          - paragraph [ref=e242]: Explore textures, test samples, and build collections with fabrics that photograph beautifully.
+          - link "Talk to us →" [ref=e243] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e245]:
+          - generic [ref=e246]: 🛍️
+          - heading "Boutiques" [level=3] [ref=e247]
+          - paragraph [ref=e248]: Small to medium quantities, fast turnaround, and the kind of quality your customers can feel.
+          - link "Talk to us →" [ref=e249] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e251]:
+          - generic [ref=e252]: 🏷️
+          - heading "Fashion Labels" [level=3] [ref=e253]
+          - paragraph [ref=e254]: From first runs to re-orders — consistent quality, no sudden MOQ surprises, direct contact.
+          - link "Talk to us →" [ref=e255] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e257]:
+          - generic [ref=e258]: 🛋️
+          - heading "Furnishing Buyers" [level=3] [ref=e259]
+          - paragraph [ref=e260]: Heavy-duty corduroys and wovens built for sofas, curtains, cushions, and upholstery.
+          - link "Talk to us →" [ref=e261] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e263]:
+          - generic [ref=e264]: 📦
+          - heading "Bulk Buyers" [level=3] [ref=e265]
+          - paragraph [ref=e266]: Decades of supplying textile businesses. Trade pricing. Reliable volumes. Since 1954.
+          - link "Talk to us →" [ref=e267] [cursor=pointer]:
+            - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+    - generic [ref=e269]:
+      - generic [ref=e271]:
+        - generic [ref=e272]: What makers say
+        - heading "Quality you can feel." [level=2] [ref=e273]
+      - generic [ref=e274]:
+        - generic [ref=e276]:
+          - generic [ref=e277]: “
+          - paragraph [ref=e278]: I've been sourcing corduroy from KodTex for my winter collection. The 14-wale is consistently excellent — colour is true, texture is uniform, and they actually answer when I call. No one else stocks this range.
+          - generic [ref=e279]: 14-Wale Cotton Corduroy
+          - generic [ref=e280]:
+            - generic [ref=e281]: Meera S.
+            - generic [ref=e282]: Independent Fashion Designer · Mumbai, Maharashtra
+        - generic [ref=e284]:
+          - generic [ref=e285]: “
+          - paragraph [ref=e286]: The pure linen shirting is what my clients ask for by name now. Quality hasn't changed in three years of ordering. And the fact that I can order exactly what I need — even 5 metres — makes all the difference.
+          - generic [ref=e287]: Pure Linen Shirting
+          - generic [ref=e288]:
+            - generic [ref=e289]: Rajan T.
+            - generic [ref=e290]: Master Tailor · Jaipur, Rajasthan
+        - generic [ref=e292]:
+          - generic [ref=e293]: “
+          - paragraph [ref=e294]: We tried four suppliers before finding KodTex. The indigo corduroy for our festive line sold out in two weeks. The heritage behind this brand shows in every bolt — you can feel the decades of experience.
+          - generic [ref=e295]: Indigo Yarn-Dyed Corduroy
+          - generic [ref=e296]:
+            - generic [ref=e297]: Priya & Co.
+            - generic [ref=e298]: Boutique Owner · Bengaluru, Karnataka
+    - generic [ref=e300]:
+      - generic [ref=e303]:
+        - generic [ref=e304]: Instagram
+        - heading "Follow the craft" [level=2] [ref=e305]
+      - generic [ref=e306]:
+        - link "Corduroy fabric close-up" [ref=e308] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Corduroy fabric close-up" [ref=e309]
+          - img [ref=e311]
+        - link "Linen texture detail" [ref=e316] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Linen texture detail" [ref=e317]
+          - img [ref=e319]
+        - link "Cotton fabric weave" [ref=e324] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Cotton fabric weave" [ref=e325]
+          - img [ref=e327]
+        - link "Fabric rolls in warehouse" [ref=e332] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Fabric rolls in warehouse" [ref=e333]
+          - img [ref=e335]
+        - link "Twill fabric detail" [ref=e340] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Twill fabric detail" [ref=e341]
+          - img [ref=e343]
+        - link "Shirting fabric close-up" [ref=e348] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img "Shirting fabric close-up" [ref=e349]
+          - img [ref=e351]
+      - link "Follow @kodtex on Instagram" [ref=e357] [cursor=pointer]:
+        - /url: https://www.instagram.com/kodtex/
+        - img [ref=e358]
+        - text: Follow @kodtex on Instagram
+    - generic [ref=e363]:
+      - generic [ref=e365]:
+        - generic [ref=e366]:
+          - generic [ref=e367]: The Fabric Guide
+          - heading "Know your fabric." [level=2] [ref=e368]
+          - paragraph [ref=e369]: Guides for makers, tailors, and anyone who wants to understand the materials they work with.
+        - link "Explore all guides →" [ref=e370] [cursor=pointer]:
+          - /url: /blog
+      - generic [ref=e371]:
+        - link "The Complete Guide to Corduroy Fabric Fabric Guide · 6 min read The Complete Guide to Corduroy Fabric Everything you need to know — wale counts, compositions, care, and how to choose the right corduroy for your project." [ref=e373] [cursor=pointer]:
+          - /url: /blog/corduroy-guide
+          - img "The Complete Guide to Corduroy Fabric" [ref=e375]
+          - generic [ref=e376]:
+            - generic [ref=e377]: Fabric Guide
+            - generic [ref=e378]: ·
+            - generic [ref=e379]: 6 min read
+          - heading "The Complete Guide to Corduroy Fabric" [level=3] [ref=e380]
+          - paragraph [ref=e381]: Everything you need to know — wale counts, compositions, care, and how to choose the right corduroy for your project.
+        - 'link "Pure Linen: Why It&apos;s Worth It Fabric Guide · 5 min read Pure Linen: Why It''s Worth It Linen gets better with every wash. Here''s what makes it special, how to care for it, and when to choose linen over cotton." [ref=e383] [cursor=pointer]':
+          - /url: /blog/linen-guide
+          - 'img "Pure Linen: Why It&apos;s Worth It" [ref=e385]'
+          - generic [ref=e386]:
+            - generic [ref=e387]: Fabric Guide
+            - generic [ref=e388]: ·
+            - generic [ref=e389]: 5 min read
+          - 'heading "Pure Linen: Why It''s Worth It" [level=3] [ref=e390]'
+          - paragraph [ref=e391]: Linen gets better with every wash. Here's what makes it special, how to care for it, and when to choose linen over cotton.
+        - link "How to Care for Your Fabrics Care & Maintenance · 4 min read How to Care for Your Fabrics Simple, practical guidance on washing, drying, and ironing cotton, linen, corduroy, and twill fabrics correctly." [ref=e393] [cursor=pointer]:
+          - /url: /blog/fabric-care
+          - img "How to Care for Your Fabrics" [ref=e395]
+          - generic [ref=e396]:
+            - generic [ref=e397]: Care & Maintenance
+            - generic [ref=e398]: ·
+            - generic [ref=e399]: 4 min read
+          - heading "How to Care for Your Fabrics" [level=3] [ref=e400]
+          - paragraph [ref=e401]: Simple, practical guidance on washing, drying, and ironing cotton, linen, corduroy, and twill fabrics correctly.
+    - generic [ref=e405]:
+      - generic [ref=e406]: Trade & Bulk
+      - heading "Supplying textile businesses since 1954." [level=2] [ref=e407]
+      - paragraph [ref=e408]: Bulk quantities, custom requirements, and the kind of trade relationship built over decades — not dashboards. Let's talk.
+      - link "Talk to Our Trade Team →" [ref=e409] [cursor=pointer]:
+        - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I%20represent%20a%20business%20and%20would%20like%20to%20discuss%20trade%2Fbulk%20fabric%20requirements.
+  - contentinfo [ref=e410]:
+    - generic [ref=e411]:
+      - generic [ref=e412]:
+        - generic [ref=e413]:
+          - link "KodTex" [ref=e414] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e415]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e416]:
+            - link "vivekk.men@gmail.com" [ref=e417] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e418]
+              - text: vivekk.men@gmail.com
+            - link "+91 79902 73955" [ref=e421] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e422]
+              - text: +91 79902 73955
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e428]:
+            - link "KodTex Instagram" [ref=e429] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e430]
+            - link "WhatsApp" [ref=e434] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e435]:
+          - heading "Fabrics" [level=4] [ref=e436]
+          - list [ref=e437]:
+            - listitem [ref=e438]:
+              - link "Corduroy" [ref=e439] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e440]:
+              - link "Linen" [ref=e441] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e442]:
+              - link "Cotton" [ref=e443] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e444]:
+              - link "Twill" [ref=e445] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e446]:
+              - link "Shirting" [ref=e447] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e448]:
+              - link "Suiting" [ref=e449] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e450]:
+              - link "Furnishing" [ref=e451] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e452]:
+          - heading "Company" [level=4] [ref=e453]
+          - list [ref=e454]:
+            - listitem [ref=e455]:
+              - link "About KodTex" [ref=e456] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e457]:
+              - link "Trade & Bulk" [ref=e458] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e459]:
+              - link "Contact Us" [ref=e460] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e461]:
+              - link "FAQ" [ref=e462] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e463]:
+          - heading "Fabric Guide" [level=4] [ref=e464]
+          - list [ref=e465]:
+            - listitem [ref=e466]:
+              - link "The Fabric Guide" [ref=e467] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e468]:
+              - link "Corduroy Guide" [ref=e469] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e470]:
+              - link "Linen Guide" [ref=e471] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e472]:
+              - link "Fabric Care" [ref=e473] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e474]:
+        - paragraph [ref=e475]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e476] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e477]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp":
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - button "Open Next.js Dev Tools" [ref=e483] [cursor=pointer]:
+    - img [ref=e484]

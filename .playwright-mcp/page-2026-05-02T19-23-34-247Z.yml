@@ -1,0 +1,156 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - button "Toggle menu" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Get in Touch
+        - heading "Let's talk fabric." [level=1] [ref=e14]
+        - paragraph [ref=e15]: WhatsApp is the fastest way to reach us. For longer enquiries, use the form and we'll open a chat with you directly.
+      - generic [ref=e16]:
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - heading "WhatsApp — fastest reply" [level=2] [ref=e20]
+            - paragraph [ref=e21]: Most enquiries answered within the hour on WhatsApp. Share your requirement and we'll get back to you personally.
+            - link "Open WhatsApp Chat →" [ref=e22] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+          - generic [ref=e23]:
+            - link "+91 7990273955 WhatsApp & Phone" [ref=e24] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e25]
+              - generic [ref=e27]:
+                - generic [ref=e28]: +91 7990273955
+                - generic [ref=e29]: WhatsApp & Phone
+            - link "vivekk.men@gmail.com Email" [ref=e30] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e31]
+              - generic [ref=e34]:
+                - generic [ref=e35]: vivekk.men@gmail.com
+                - generic [ref=e36]: Email
+            - generic [ref=e37]:
+              - img [ref=e38]
+              - generic [ref=e41]:
+                - generic [ref=e42]: Kailash Vivek & Co.
+                - generic [ref=e43]: N.C. Market, Ahmedabad, Gujarat, India
+          - generic [ref=e44]:
+            - generic [ref=e45]: Business Hours
+            - generic [ref=e46]:
+              - generic [ref=e47]:
+                - generic [ref=e48]: Monday – Saturday
+                - generic [ref=e49]: 10:00 AM – 7:00 PM IST
+              - generic [ref=e50]:
+                - generic [ref=e51]: Sunday
+                - generic [ref=e52]: Closed
+        - generic [ref=e54]:
+          - heading "Send a message" [level=2] [ref=e55]
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: Name *
+              - textbox "Your name" [ref=e59]
+            - generic [ref=e60]:
+              - generic [ref=e61]:
+                - generic [ref=e62]: Phone
+                - textbox "+91" [ref=e63]
+              - generic [ref=e64]:
+                - generic [ref=e65]: Email
+                - textbox "you@example.com" [ref=e66]
+            - generic [ref=e67]:
+              - generic [ref=e68]: Requirement *
+              - textbox "Tell us about the fabric you're looking for — type, quantity, colour, or any other details..." [ref=e69]
+            - paragraph [ref=e70]: Submitting this form will open WhatsApp with your message pre-filled.
+            - button "Send via WhatsApp →" [ref=e71]
+  - contentinfo [ref=e72]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - link "KodTex" [ref=e76] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e77]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e78]:
+            - link "vivekk.men@gmail.com" [ref=e79] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e80]
+              - text: vivekk.men@gmail.com
+            - link "+91 7990273955" [ref=e83] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e84]
+              - text: +91 7990273955
+            - generic [ref=e86]:
+              - img [ref=e87]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e90]:
+            - link "KodTex Instagram" [ref=e91] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e92]
+            - link "WhatsApp" [ref=e96] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e97]:
+          - heading "Fabrics" [level=4] [ref=e98]
+          - list [ref=e99]:
+            - listitem [ref=e100]:
+              - link "Corduroy" [ref=e101] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e102]:
+              - link "Linen" [ref=e103] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e104]:
+              - link "Cotton" [ref=e105] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e106]:
+              - link "Twill" [ref=e107] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e108]:
+              - link "Shirting" [ref=e109] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e110]:
+              - link "Suiting" [ref=e111] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e112]:
+              - link "Furnishing" [ref=e113] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e114]:
+          - heading "Company" [level=4] [ref=e115]
+          - list [ref=e116]:
+            - listitem [ref=e117]:
+              - link "About KodTex" [ref=e118] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e119]:
+              - link "Trade & Bulk" [ref=e120] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e121]:
+              - link "Contact Us" [ref=e122] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e123]:
+              - link "FAQ" [ref=e124] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e125]:
+          - heading "Fabric Guide" [level=4] [ref=e126]
+          - list [ref=e127]:
+            - listitem [ref=e128]:
+              - link "The Fabric Guide" [ref=e129] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e130]:
+              - link "Corduroy Guide" [ref=e131] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e132]:
+              - link "Linen Guide" [ref=e133] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e134]:
+              - link "Fabric Care" [ref=e135] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e136]:
+        - paragraph [ref=e137]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e138] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e139]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp":
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - button "Open Next.js Dev Tools" [ref=e145] [cursor=pointer]:
+    - img [ref=e146]

@@ -30,11 +30,30 @@ const resourceLinks = [
 export default function Footer() {
   return (
     <footer className="bg-charcoal text-ivory">
+      {/* Top accent gradient line */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-terracotta/50 to-transparent" />
+
       <div className="max-w-[1320px] mx-auto px-6 md:px-10 py-16 md:py-20">
+        {/* Pre-footer CTA band */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 bg-white/5 rounded-lg px-6 md:px-8 py-5 mb-16 border border-white/8">
+          <div>
+            <p className="text-ivory font-semibold text-base md:text-lg">Ready to order?</p>
+            <p className="text-sand/70 text-sm mt-0.5">Chat with us on WhatsApp — no minimums, instant reply.</p>
+          </div>
+          <a
+            href={wa.general()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 bg-gradient-to-r from-terracotta to-[#E8834E] text-white text-sm font-semibold tracking-wide px-6 py-2.5 hover:opacity-90 transition-opacity rounded-sm shadow-[0_2px_12px_rgba(194,92,53,0.3)] inline-flex items-center gap-2"
+          >
+            WhatsApp Us →
+          </a>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="font-heading text-3xl text-ivory block mb-3">
+            <Link href="/" className="font-heading text-4xl text-ivory block mb-3">
               KodTex
             </Link>
             <p className="text-sand text-sm leading-relaxed max-w-xs mb-6">

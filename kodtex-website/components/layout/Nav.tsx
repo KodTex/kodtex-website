@@ -42,7 +42,7 @@ export default function Nav() {
         className={cn(
           "fixed top-0 left-0 right-0 z-40 transition-all duration-300",
           isScrolled
-            ? "bg-ivory/95 backdrop-blur-sm border-b border-sand/50 shadow-sm"
+            ? "bg-ivory/75 backdrop-blur-xl saturate-150 border-b border-sand/30 shadow-[0_1px_0_0_rgba(205,185,154,0.25)]"
             : "bg-transparent"
         )}
         initial={{ y: -100 }}
@@ -73,11 +73,15 @@ export default function Nav() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium tracking-wide transition-colors hover:opacity-70",
+                  "text-sm font-medium tracking-wide transition-colors relative group",
                   isScrolled ? "text-charcoal" : "text-white"
                 )}
               >
                 {link.label}
+                <span className={cn(
+                  "absolute -bottom-0.5 left-0 h-px w-0 group-hover:w-full transition-all duration-300",
+                  isScrolled ? "bg-terracotta" : "bg-white"
+                )} />
               </Link>
             ))}
           </nav>
@@ -100,7 +104,7 @@ export default function Nav() {
               href={wa.general()}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-terracotta text-white text-sm font-semibold tracking-wide px-5 py-2 hover:bg-terracotta-dark transition-colors"
+              className="bg-gradient-to-r from-terracotta to-[#E8834E] text-white text-sm font-semibold tracking-wide px-5 py-2 hover:opacity-90 transition-opacity shadow-[0_2px_12px_rgba(194,92,53,0.3)] rounded-sm"
             >
               WhatsApp Us
             </a>
@@ -124,7 +128,7 @@ export default function Nav() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 z-30 bg-charcoal flex flex-col"
+            className="fixed inset-0 z-30 bg-charcoal/97 backdrop-blur-xl flex flex-col"
             initial={{ opacity: 0, y: "-100%" }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}

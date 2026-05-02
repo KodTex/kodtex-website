@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - button "Toggle menu" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Trade & Bulk
+        - heading "Supplying textile businesses since 1954." [level=1] [ref=e15]
+        - paragraph [ref=e16]: Bulk quantities, custom requirements, and the kind of trade relationship built over decades — not dashboards.
+        - link "Start a Trade Conversation →" [ref=e17] [cursor=pointer]:
+          - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I%20represent%20a%20business%20and%20would%20like%20to%20discuss%20trade%2Fbulk%20fabric%20requirements.
+      - generic [ref=e19]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: Why KodTex for Trade
+          - heading "Reliability built over 70 years." [level=2] [ref=e23]
+        - generic [ref=e24]:
+          - generic [ref=e26]:
+            - heading "No Minimum Order" [level=3] [ref=e27]
+            - paragraph [ref=e28]: Even trade orders have no minimums. Order what you need, when you need it.
+          - generic [ref=e30]:
+            - heading "Consistent Quality" [level=3] [ref=e31]
+            - paragraph [ref=e32]: ISO 9001:2008 certified. Same quality across every lot, every re-order.
+          - generic [ref=e34]:
+            - heading "Direct Communication" [level=3] [ref=e35]
+            - paragraph [ref=e36]: No support tickets. Talk to a human. WhatsApp us directly.
+          - generic [ref=e38]:
+            - heading "Custom Requirements" [level=3] [ref=e39]
+            - paragraph [ref=e40]: Tell us exactly what you need — colour, length, finish. We'll make it work.
+          - generic [ref=e42]:
+            - heading "GST Invoicing" [level=3] [ref=e43]
+            - paragraph [ref=e44]: Proper documentation for every order. GST invoices issued always.
+          - generic [ref=e46]:
+            - heading "Fast Dispatch" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Quick turnaround from our Ahmedabad base. Pan-India and international shipping.
+      - generic [ref=e50]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: How It Works
+          - heading "Simple. Personal. Fast." [level=2] [ref=e54]
+        - generic [ref=e55]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: "01"
+            - heading "WhatsApp your requirement" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Tell us the fabric type, quantity estimate, and any colour or finish preferences.
+          - generic [ref=e62]:
+            - generic [ref=e63]: "02"
+            - heading "We share pricing" [level=3] [ref=e64]
+            - paragraph [ref=e65]: You'll receive a quote based on your exact requirement — no hidden costs.
+          - generic [ref=e67]:
+            - generic [ref=e68]: "03"
+            - heading "Approve and order" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Confirm your order. We dispatch quickly with tracked shipping.
+          - generic [ref=e72]:
+            - generic [ref=e73]: "04"
+            - heading "Reorder anytime" [level=3] [ref=e74]
+            - paragraph [ref=e75]: Consistent quality, reliable availability, and a direct line to our team.
+      - generic [ref=e77]:
+        - generic [ref=e79]:
+          - generic [ref=e80]: Trade FAQ
+          - heading "Common questions." [level=2] [ref=e81]
+        - generic [ref=e82]:
+          - generic [ref=e84]:
+            - heading "Do you offer trade or wholesale pricing?" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Pricing scales with quantity. WhatsApp us with your volume requirements and we'll share our trade rates.
+          - generic [ref=e88]:
+            - heading "Is there a minimum order for trade buyers?" [level=3] [ref=e89]
+            - paragraph [ref=e90]: No minimum order — even for trade buyers. Order exactly what you need.
+          - generic [ref=e92]:
+            - heading "Can we get consistent quality across re-orders?" [level=3] [ref=e93]
+            - paragraph [ref=e94]: Yes. Our ISO-certified quality control ensures consistent colour and construction across every order.
+          - generic [ref=e96]:
+            - heading "Do you provide GST invoices?" [level=3] [ref=e97]
+            - paragraph [ref=e98]: Yes, GST invoices are provided for all orders. Our GST number is 24AFCPM9485J1ZZ.
+      - generic [ref=e101]:
+        - heading "Let's start a conversation." [level=2] [ref=e102]
+        - paragraph [ref=e103]: WhatsApp us with your requirement. We'll respond within the hour.
+        - link "WhatsApp Our Trade Team →" [ref=e104] [cursor=pointer]:
+          - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I%20represent%20a%20business%20and%20would%20like%20to%20discuss%20trade%2Fbulk%20fabric%20requirements.
+  - contentinfo [ref=e105]:
+    - generic [ref=e106]:
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - link "KodTex" [ref=e109] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e110]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e111]:
+            - link "vivekk.men@gmail.com" [ref=e112] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e113]
+              - text: vivekk.men@gmail.com
+            - link "+91 7990273955" [ref=e116] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e117]
+              - text: +91 7990273955
+            - generic [ref=e119]:
+              - img [ref=e120]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e123]:
+            - link "KodTex Instagram" [ref=e124] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e125]
+            - link "WhatsApp" [ref=e129] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e130]:
+          - heading "Fabrics" [level=4] [ref=e131]
+          - list [ref=e132]:
+            - listitem [ref=e133]:
+              - link "Corduroy" [ref=e134] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e135]:
+              - link "Linen" [ref=e136] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e137]:
+              - link "Cotton" [ref=e138] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e139]:
+              - link "Twill" [ref=e140] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e141]:
+              - link "Shirting" [ref=e142] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e143]:
+              - link "Suiting" [ref=e144] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e145]:
+              - link "Furnishing" [ref=e146] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e147]:
+          - heading "Company" [level=4] [ref=e148]
+          - list [ref=e149]:
+            - listitem [ref=e150]:
+              - link "About KodTex" [ref=e151] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e152]:
+              - link "Trade & Bulk" [ref=e153] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e154]:
+              - link "Contact Us" [ref=e155] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e156]:
+              - link "FAQ" [ref=e157] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e158]:
+          - heading "Fabric Guide" [level=4] [ref=e159]
+          - list [ref=e160]:
+            - listitem [ref=e161]:
+              - link "The Fabric Guide" [ref=e162] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e163]:
+              - link "Corduroy Guide" [ref=e164] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e165]:
+              - link "Linen Guide" [ref=e166] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e167]:
+              - link "Fabric Care" [ref=e168] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e169]:
+        - paragraph [ref=e170]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e171] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e172]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp" [ref=e173] [cursor=pointer]:
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+    - img [ref=e175]
+  - button "Open Next.js Dev Tools" [ref=e182] [cursor=pointer]:
+    - img [ref=e183]
+  - alert [ref=e186]

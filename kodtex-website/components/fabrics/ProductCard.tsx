@@ -25,7 +25,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
 
   return (
     <motion.div
-      className={cn("group bg-linen-white border border-sand/40 overflow-hidden flex flex-col", className)}
+      className={cn("group bg-linen-white border border-sand/30 overflow-hidden flex flex-col hover:ring-1 hover:ring-terracotta/25 transition-shadow", className)}
       whileHover={{ y: -4, scale: 1.015 }}
       transition={{ type: "spring", stiffness: 300, damping: 24 }}
     >
@@ -39,8 +39,14 @@ export default function ProductCard({ product, className }: ProductCardProps) {
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        {/* Hover overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+          <span className="text-white text-xs font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+            View Range →
+          </span>
+        </div>
         {product.featured && (
-          <span className="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-medium tracking-wide px-2 py-1 uppercase">
+          <span className="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-semibold tracking-widest px-2.5 py-1 uppercase rounded-sm">
             Featured
           </span>
         )}
@@ -49,7 +55,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
       {/* Content */}
       <div className="p-5 flex flex-col gap-3 flex-1">
         <div className="flex items-center gap-2">
-          <span className="text-[10px] font-medium tracking-[0.1em] uppercase text-sage border border-sage/30 px-2 py-0.5">
+          <span className="text-[10px] font-semibold tracking-[0.1em] uppercase text-terracotta bg-terracotta/8 border border-terracotta/20 px-2 py-0.5 rounded-sm">
             {product.category}
           </span>
           {product.wale && (
@@ -70,7 +76,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
         </p>
 
         {/* Specs */}
-        <div className="flex items-center gap-3 text-xs text-charcoal/40 border-t border-sand/40 pt-3">
+        <div className="flex items-center gap-3 text-xs text-charcoal/40 border-t border-sand/30 pt-3">
           <span>{product.composition}</span>
           <span>·</span>
           <span>{product.width}</span>
@@ -88,7 +94,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
             href={getWhatsAppUrl(product)}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 text-center bg-terracotta text-white text-xs font-semibold tracking-wide py-2.5 hover:bg-terracotta-dark transition-colors"
+            className="flex-1 text-center bg-gradient-to-r from-terracotta to-[#D4795A] text-white text-xs font-semibold tracking-wide py-2.5 hover:opacity-90 transition-opacity rounded-sm shadow-[0_2px_8px_rgba(194,92,53,0.25)]"
           >
             Order via WhatsApp
           </a>
@@ -96,7 +102,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
             href={getSampleUrl(product)}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 text-center border border-sand text-charcoal/60 text-xs font-medium py-2.5 hover:border-terracotta hover:text-terracotta transition-colors"
+            className="px-3 text-center border border-sand/60 text-charcoal/60 text-xs font-medium py-2.5 hover:border-terracotta hover:text-terracotta transition-colors rounded-sm"
           >
             Sample
           </a>
