@@ -51,7 +51,7 @@ export default function WhyKodTex() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
           {usps.map((usp, i) => (
             <AnimatedSection key={usp.number} delay={i * 0.07}>
-              <div className="bg-deep-slate p-8 md:p-10 flex flex-col gap-4 h-full group hover:bg-white/5 transition-colors">
+              <div className="bg-deep-slate p-8 md:p-10 flex flex-col gap-4 h-full group border border-transparent hover:bg-white/10 hover:border-white/10 transition-all">
                 <span className="text-white/20 font-heading text-4xl leading-none">
                   {usp.number}
                 </span>

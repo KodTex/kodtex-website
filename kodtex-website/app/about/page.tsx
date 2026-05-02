@@ -127,7 +127,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-12">
               {timeline.map((item, i) => (
                 <AnimatedSection key={item.year} delay={i * 0.08}>
-                  <div className={`flex flex-col md:flex-row gap-6 md:gap-0 relative ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                  <div className={`flex flex-col md:flex-row gap-6 md:gap-0 relative pl-6 md:pl-0 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                     <div className="md:w-1/2 md:pr-16 md:text-right flex-shrink-0">
                       {i % 2 === 0 ? (
                         <>
@@ -188,8 +188,8 @@ export default function AboutPage() {
           </AnimatedSection>
           <AnimatedSection delay={0.1}>
             <div className="flex flex-col md:flex-row gap-8 items-start max-w-xl">
-              <div className="w-32 h-32 bg-sand/30 flex items-center justify-center flex-shrink-0 text-charcoal/30 text-sm text-center border border-sand/40">
-                Photo<br />coming soon
+              <div className="w-20 h-20 rounded-full bg-sand/40 flex items-center justify-center flex-shrink-0 border border-sand/60">
+                <span className="font-heading text-2xl text-charcoal/60">VM</span>
               </div>
               <div>
                 <h3 className="font-semibold text-charcoal text-xl mb-1">Vivek Mendiratta</h3>

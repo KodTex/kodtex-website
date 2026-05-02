@@ -7,7 +7,7 @@ const placeholderPosts = [
   { id: "3", imageUrl: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=80", alt: "Cotton fabric weave" },
   { id: "4", imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80", alt: "Fabric rolls in warehouse" },
   { id: "5", imageUrl: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=400&q=80", alt: "Twill fabric detail" },
-  { id: "6", imageUrl: "https://images.unsplash.com/photo-1594938298603-c8148c4b7d0b?w=400&q=80", alt: "Shirting fabric close-up" },
+  { id: "6", imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80", alt: "Shirting fabric close-up" },
 ];
 
 export default function InstagramFeed() {

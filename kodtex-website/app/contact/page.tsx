@@ -23,7 +23,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="pt-24 pb-24 min-h-screen">
+    <div className="pt-24 pb-24">
       <div className="max-w-[1320px] mx-auto px-6 md:px-10 pt-10">
         <AnimatedSection>
           <div className="mb-14">
@@ -114,7 +114,7 @@ export default function ContactPage() {
           </AnimatedSection>
 
           {/* Form */}
-          <AnimatedSection direction="right" delay={0.1}>
+          <AnimatedSection direction="up" delay={0.05}>
             <div>
               <h2 className="font-semibold text-charcoal text-xl mb-6">
                 Send a message
@@ -131,11 +131,12 @@ export default function ContactPage() {
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5">
                   <div>
-                    <label className="text-xs font-medium text-charcoal/60 tracking-wide uppercase block mb-1.5">
+                    <label className="text-sm font-medium text-charcoal/70 block mb-1.5">
                       Name *
                     </label>
                     <input
                       required
+                      aria-required="true"
                       type="text"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -145,7 +146,7 @@ export default function ContactPage() {
                   </div>
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label className="text-xs font-medium text-charcoal/60 tracking-wide uppercase block mb-1.5">
+                      <label className="text-sm font-medium text-charcoal/70 block mb-1.5">
                         Phone
                       </label>
                       <input
@@ -157,7 +158,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="text-xs font-medium text-charcoal/60 tracking-wide uppercase block mb-1.5">
+                      <label className="text-sm font-medium text-charcoal/70 block mb-1.5">
                         Email
                       </label>
                       <input
@@ -170,11 +171,12 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div>
-                    <label className="text-xs font-medium text-charcoal/60 tracking-wide uppercase block mb-1.5">
+                    <label className="text-sm font-medium text-charcoal/70 block mb-1.5">
                       Requirement *
                     </label>
                     <textarea
                       required
+                      aria-required="true"
                       rows={5}
                       value={form.requirement}
                       onChange={(e) => setForm({ ...form, requirement: e.target.value })}
@@ -182,7 +184,7 @@ export default function ContactPage() {
                       placeholder="Tell us about the fabric you're looking for — type, quantity, colour, or any other details..."
                     />
                   </div>
-                  <p className="text-xs text-charcoal/40">
+                  <p className="text-xs text-charcoal/60">
                     Submitting this form will open WhatsApp with your message
                     pre-filled.
                   </p>

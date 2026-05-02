@@ -129,7 +129,7 @@ export default function TradePage() {
             {steps.map((step, i) => (
               <AnimatedSection key={step.number} delay={i * 0.08}>
                 <div className="flex flex-col gap-4">
-                  <span className="font-heading text-5xl text-white/15">{step.number}</span>
+                  <span className="font-heading text-5xl text-white/30">{step.number}</span>
                   <h3 className="font-semibold text-ivory text-lg">{step.title}</h3>
                   <p className="text-sand/60 text-sm leading-relaxed">{step.body}</p>
                 </div>

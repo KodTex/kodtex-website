@@ -51,7 +51,7 @@ export default function Hero() {
           Premium Fabrics · Est. 1954
         </motion.span>
 
-        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none mb-8">
+        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-8xl text-white leading-none mb-8">
           {heroWords.map((word, i) => (
             <motion.span
               key={word}
@@ -96,7 +96,7 @@ export default function Hero() {
             href={wa.general()}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-white/40 text-white text-sm font-medium tracking-wide px-7 py-3.5 hover:bg-white/10 hover:border-white/60 transition-all inline-flex items-center gap-2"
+            className="border border-white/60 text-white text-sm font-medium tracking-wide px-7 py-3.5 hover:bg-white/10 hover:border-white/80 transition-all inline-flex items-center gap-2"
           >
             WhatsApp Us
           </a>
@@ -110,7 +110,7 @@ export default function Hero() {
           transition={{ delay: 1.2 }}
         >
           <div className="h-px w-8 bg-white/30" />
-          <span className="text-white/50 text-xs tracking-wide">
+          <span className="text-white/60 text-xs tracking-wide">
             No minimum order · Fully customisable
           </span>
         </motion.div>
@@ -118,7 +118,7 @@ export default function Hero() {
 
       {/* Scroll indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/40"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-white/60"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}

@@ -20,12 +20,12 @@ export default function Marquee() {
     <div className="bg-charcoal py-4 overflow-hidden">
       <div className="flex">
         <div className="flex animate-marquee whitespace-nowrap will-change-transform">
-          <span className="text-sand/60 text-xs font-medium tracking-[0.12em] uppercase mr-0">
+          <span className="text-sand/80 text-xs font-medium tracking-[0.12em] uppercase mr-0">
             {text}{text}
           </span>
         </div>
         <div className="flex animate-marquee whitespace-nowrap will-change-transform" aria-hidden="true">
-          <span className="text-sand/60 text-xs font-medium tracking-[0.12em] uppercase">
+          <span className="text-sand/80 text-xs font-medium tracking-[0.12em] uppercase">
             {text}{text}
           </span>
         </div>

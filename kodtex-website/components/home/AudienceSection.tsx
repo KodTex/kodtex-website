@@ -59,7 +59,7 @@ export default function AudienceSection() {
           <div className="flex gap-4 pb-4 w-max">
             {audiences.map((a, i) => (
               <AnimatedSection key={a.title} delay={i * 0.05}>
-                <div className="w-[240px] bg-ivory border border-sand/40 p-6 flex flex-col gap-3">
+                <div className="w-[80vw] max-w-[280px] bg-ivory border border-sand/40 p-6 flex flex-col gap-3">
                   <span className="text-3xl">{a.icon}</span>
                   <h3 className="font-semibold text-charcoal text-base">{a.title}</h3>
                   <p className="text-charcoal/60 text-sm leading-relaxed">{a.body}</p>
