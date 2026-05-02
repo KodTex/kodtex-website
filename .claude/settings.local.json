@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:21st.dev)",
+      "WebFetch(domain:motion.dev)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --eslint --no-import-alias)",
+      "Bash(npx create-next-app@latest kodtex-website --typescript --tailwind --app --no-src-dir --eslint --no-import-alias)",
+      "Bash(npm install *)",
+      "Bash(npx shadcn@latest init --defaults)",
+      "Bash(npx shadcn@latest add accordion dialog sheet badge button input textarea --yes)",
+      "Bash(npx tsc *)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('instagram'\\)\\)\\)\")",
+      "Bash(npm run *)",
+      "WebFetch(domain:localhost)"
+    ]
+  }
+}
