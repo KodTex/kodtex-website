@@ -14,7 +14,7 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="pt-24 pb-24 min-h-screen">
+    <div className="pt-24 pb-24">
       {/* Header */}
       <div className="bg-charcoal py-20 md:py-28 mb-16">
         <div className="max-w-[1320px] mx-auto px-6 md:px-10">
@@ -52,8 +52,8 @@ export default function BlogPage() {
                     <span className="text-xs font-medium text-terracotta tracking-wide">
                       {post.category}
                     </span>
-                    <span className="text-xs text-charcoal/30">·</span>
-                    <span className="text-xs text-charcoal/40">{post.readingTime} read</span>
+                    <span className="text-xs text-charcoal/50">·</span>
+                    <span className="text-xs text-charcoal/60">{post.readingTime} read</span>
                   </div>
                   <h2 className="font-heading text-2xl text-charcoal leading-snug mb-3 group-hover:text-terracotta transition-colors">
                     {post.title}

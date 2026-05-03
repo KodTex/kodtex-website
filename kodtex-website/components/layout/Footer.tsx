@@ -54,7 +54,7 @@ export default function Footer() {
                 className="flex items-center gap-2 hover:text-ivory transition-colors"
               >
                 <Phone size={14} />
-                +91 7990273955
+                +91 79902 73955
               </a>
               <span className="flex items-start gap-2">
                 <MapPin size={14} className="mt-0.5 flex-shrink-0" />
