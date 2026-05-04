@@ -62,13 +62,21 @@ export default function FabricSpotlight({
               className="w-full h-full object-cover"
               style={{ scale: imgScale }}
             />
+            {/* Editorial depth overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/25 to-transparent pointer-events-none" />
+            {/* Collection chip */}
+            {eyebrow && (
+              <span className="absolute top-4 left-4 glass-dark rounded-sm text-[10px] font-medium tracking-[0.12em] uppercase text-white/70 px-3 py-1.5">
+                {eyebrow}
+              </span>
+            )}
           </div>
 
           {/* Text */}
           <motion.div style={{ x: textX }} className="flex flex-col gap-6">
             {eyebrow && (
               <span className="text-xs font-medium tracking-[0.12em] uppercase text-terracotta">
-                {eyebrow}
+                ✦ {eyebrow}
               </span>
             )}
             <h2 className="font-heading text-5xl md:text-6xl text-charcoal leading-tight">
@@ -81,7 +89,7 @@ export default function FabricSpotlight({
                 {tags.map((tag) => (
                   <span
                     key={tag.label}
-                    className="border border-sand text-charcoal/70 text-xs font-medium tracking-wide px-3 py-1.5"
+                    className="border border-sand/60 text-charcoal/65 text-xs font-medium tracking-wide px-3 py-1.5 hover:bg-sand/20 transition-colors rounded-sm"
                   >
                     {tag.label}
                   </span>
@@ -91,7 +99,7 @@ export default function FabricSpotlight({
 
             <Link
               href={ctaHref}
-              className="inline-flex items-center gap-2 text-charcoal font-semibold text-sm tracking-wide group mt-2 w-fit border-b-2 border-terracotta pb-1 hover:text-terracotta transition-colors"
+              className="inline-flex items-center gap-2 bg-terracotta/8 hover:bg-terracotta text-terracotta hover:text-white border border-terracotta/30 hover:border-terracotta px-6 py-2.5 text-sm font-medium tracking-wide transition-all duration-200 rounded-sm mt-2 w-fit group"
             >
               {ctaLabel}
               <span

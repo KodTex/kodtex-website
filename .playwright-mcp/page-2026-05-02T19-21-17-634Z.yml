@@ -1,0 +1,449 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - navigation [ref=e6]:
+        - link "Fabrics" [ref=e7] [cursor=pointer]:
+          - /url: /fabrics
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about
+        - link "Trade" [ref=e9] [cursor=pointer]:
+          - /url: /trade
+        - link "Fabric Guide" [ref=e10] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: /contact
+      - generic [ref=e12]:
+        - link "KodTex on Instagram" [ref=e13] [cursor=pointer]:
+          - /url: https://www.instagram.com/kodtex/
+          - img [ref=e14]
+        - link "WhatsApp Us" [ref=e18] [cursor=pointer]:
+          - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Our Collection
+        - heading "All Fabrics" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Corduroy, linen, cotton, twill, shirting, suiting, and furnishing. No minimums. Every order customisable.
+      - generic [ref=e29]:
+        - button "All Fabrics" [ref=e30]: All Fabrics
+        - button "Corduroy" [ref=e32]
+        - button "Linen" [ref=e33]
+        - button "Cotton" [ref=e34]
+        - button "Twill" [ref=e35]
+        - button "Shirting" [ref=e36]
+        - button "Suiting" [ref=e37]
+        - button "Furnishing" [ref=e38]
+      - generic [ref=e39]:
+        - generic [ref=e40]: 14 fabrics
+        - generic [ref=e41]:
+          - generic [ref=e43]:
+            - link "14-Wale Cotton Corduroy Featured" [ref=e44] [cursor=pointer]:
+              - /url: /fabrics/corduroy/14-wale-cotton-corduroy
+              - img "14-Wale Cotton Corduroy" [ref=e45]
+              - generic [ref=e46]: Featured
+            - generic [ref=e47]:
+              - generic [ref=e48]:
+                - generic [ref=e49]: corduroy
+                - generic [ref=e50]: 14-wale
+              - link "14-Wale Cotton Corduroy" [ref=e51] [cursor=pointer]:
+                - /url: /fabrics/corduroy/14-wale-cotton-corduroy
+                - heading "14-Wale Cotton Corduroy" [level=3] [ref=e52]
+              - paragraph [ref=e53]: The classic corduroy. Fine wales, rich texture, exceptional drape.
+              - generic [ref=e54]:
+                - generic [ref=e55]: 100% Cotton
+                - generic [ref=e56]: ·
+                - generic [ref=e57]: 58 inches
+                - generic [ref=e58]: ·
+                - generic [ref=e59]: 280 GSM
+              - generic [ref=e60]:
+                - link "Order via WhatsApp" [ref=e61] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%2014-Wale%20Cotton%20Corduroy%20(corduroy%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e62] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%2014-Wale%20Cotton%20Corduroy.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e64]:
+            - link "8-Wale Wide Corduroy Featured" [ref=e65] [cursor=pointer]:
+              - /url: /fabrics/corduroy/8-wale-wide-corduroy
+              - img "8-Wale Wide Corduroy" [ref=e66]
+              - generic [ref=e67]: Featured
+            - generic [ref=e68]:
+              - generic [ref=e69]:
+                - generic [ref=e70]: corduroy
+                - generic [ref=e71]: 8-wale
+              - link "8-Wale Wide Corduroy" [ref=e72] [cursor=pointer]:
+                - /url: /fabrics/corduroy/8-wale-wide-corduroy
+                - heading "8-Wale Wide Corduroy" [level=3] [ref=e73]
+              - paragraph [ref=e74]: Bold wales, statement texture. For those who want corduroy noticed.
+              - generic [ref=e75]:
+                - generic [ref=e76]: 100% Cotton
+                - generic [ref=e77]: ·
+                - generic [ref=e78]: 58 inches
+                - generic [ref=e79]: ·
+                - generic [ref=e80]: 320 GSM
+              - generic [ref=e81]:
+                - link "Order via WhatsApp" [ref=e82] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%208-Wale%20Wide%20Corduroy%20(corduroy%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e83] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%208-Wale%20Wide%20Corduroy.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e85]:
+            - link "21-Wale Fine Corduroy" [ref=e86] [cursor=pointer]:
+              - /url: /fabrics/corduroy/21-wale-fine-corduroy
+              - img "21-Wale Fine Corduroy" [ref=e87]
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: corduroy
+                - generic [ref=e91]: 21-wale
+              - link "21-Wale Fine Corduroy" [ref=e92] [cursor=pointer]:
+                - /url: /fabrics/corduroy/21-wale-fine-corduroy
+                - heading "21-Wale Fine Corduroy" [level=3] [ref=e93]
+              - paragraph [ref=e94]: The finest corduroy we make. Whisper-soft, elegant, shirt-weight.
+              - generic [ref=e95]:
+                - generic [ref=e96]: 100% Cotton
+                - generic [ref=e97]: ·
+                - generic [ref=e98]: 58 inches
+                - generic [ref=e99]: ·
+                - generic [ref=e100]: 200 GSM
+              - generic [ref=e101]:
+                - link "Order via WhatsApp" [ref=e102] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%2021-Wale%20Fine%20Corduroy%20(corduroy%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e103] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%2021-Wale%20Fine%20Corduroy.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e105]:
+            - link "Stretch Corduroy (Cotton Lycra) Featured" [ref=e106] [cursor=pointer]:
+              - /url: /fabrics/corduroy/stretch-corduroy-lycra
+              - img "Stretch Corduroy (Cotton Lycra)" [ref=e107]
+              - generic [ref=e108]: Featured
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: corduroy
+                - generic [ref=e112]: 14-wale
+              - link "Stretch Corduroy (Cotton Lycra)" [ref=e113] [cursor=pointer]:
+                - /url: /fabrics/corduroy/stretch-corduroy-lycra
+                - heading "Stretch Corduroy (Cotton Lycra)" [level=3] [ref=e114]
+              - paragraph [ref=e115]: Classic corduroy texture with modern stretch comfort.
+              - generic [ref=e116]:
+                - generic [ref=e117]: 97% Cotton, 3% Lycra
+                - generic [ref=e118]: ·
+                - generic [ref=e119]: 58 inches
+                - generic [ref=e120]: ·
+                - generic [ref=e121]: 260 GSM
+              - generic [ref=e122]:
+                - link "Order via WhatsApp" [ref=e123] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Stretch%20Corduroy%20(Cotton%20Lycra)%20(corduroy%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e124] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Stretch%20Corduroy%20(Cotton%20Lycra).%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e126]:
+            - link "Indigo Yarn-Dyed Corduroy Featured" [ref=e127] [cursor=pointer]:
+              - /url: /fabrics/corduroy/indigo-yarn-dyed-corduroy
+              - img "Indigo Yarn-Dyed Corduroy" [ref=e128]
+              - generic [ref=e129]: Featured
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e132]: corduroy
+                - generic [ref=e133]: 14-wale
+              - link "Indigo Yarn-Dyed Corduroy" [ref=e134] [cursor=pointer]:
+                - /url: /fabrics/corduroy/indigo-yarn-dyed-corduroy
+                - heading "Indigo Yarn-Dyed Corduroy" [level=3] [ref=e135]
+              - paragraph [ref=e136]: Deep indigo tones with natural variation — each length unique.
+              - generic [ref=e137]:
+                - generic [ref=e138]: 100% Cotton
+                - generic [ref=e139]: ·
+                - generic [ref=e140]: 58 inches
+                - generic [ref=e141]: ·
+                - generic [ref=e142]: 290 GSM
+              - generic [ref=e143]:
+                - link "Order via WhatsApp" [ref=e144] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Indigo%20Yarn-Dyed%20Corduroy%20(corduroy%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e145] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Indigo%20Yarn-Dyed%20Corduroy.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e147]:
+            - link "Pure Linen Shirting Featured" [ref=e148] [cursor=pointer]:
+              - /url: /fabrics/linen/pure-linen-shirting
+              - img "Pure Linen Shirting" [ref=e149]
+              - generic [ref=e150]: Featured
+            - generic [ref=e151]:
+              - generic [ref=e153]: linen
+              - link "Pure Linen Shirting" [ref=e154] [cursor=pointer]:
+                - /url: /fabrics/linen/pure-linen-shirting
+                - heading "Pure Linen Shirting" [level=3] [ref=e155]
+              - paragraph [ref=e156]: 100% pure linen, shirt-weight. Natural slub, breathable, authentic.
+              - generic [ref=e157]:
+                - generic [ref=e158]: 100% Linen
+                - generic [ref=e159]: ·
+                - generic [ref=e160]: 58 inches
+                - generic [ref=e161]: ·
+                - generic [ref=e162]: 140 GSM
+              - generic [ref=e163]:
+                - link "Order via WhatsApp" [ref=e164] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Pure%20Linen%20Shirting%20(linen%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e165] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Pure%20Linen%20Shirting.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e167]:
+            - link "Linen-Cotton Blend Featured" [ref=e168] [cursor=pointer]:
+              - /url: /fabrics/linen/linen-cotton-blend
+              - img "Linen-Cotton Blend" [ref=e169]
+              - generic [ref=e170]: Featured
+            - generic [ref=e171]:
+              - generic [ref=e173]: linen
+              - link "Linen-Cotton Blend" [ref=e174] [cursor=pointer]:
+                - /url: /fabrics/linen/linen-cotton-blend
+                - heading "Linen-Cotton Blend" [level=3] [ref=e175]
+              - paragraph [ref=e176]: The approachable linen. Linen texture, cotton softness.
+              - generic [ref=e177]:
+                - generic [ref=e178]: 55% Linen, 45% Cotton
+                - generic [ref=e179]: ·
+                - generic [ref=e180]: 58 inches
+                - generic [ref=e181]: ·
+                - generic [ref=e182]: 160 GSM
+              - generic [ref=e183]:
+                - link "Order via WhatsApp" [ref=e184] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Linen-Cotton%20Blend%20(linen%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e185] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Linen-Cotton%20Blend.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e187]:
+            - link "Heavy Linen Suiting" [ref=e188] [cursor=pointer]:
+              - /url: /fabrics/linen/heavy-linen-suiting
+              - img "Heavy Linen Suiting" [ref=e189]
+            - generic [ref=e190]:
+              - generic [ref=e192]: linen
+              - link "Heavy Linen Suiting" [ref=e193] [cursor=pointer]:
+                - /url: /fabrics/linen/heavy-linen-suiting
+                - heading "Heavy Linen Suiting" [level=3] [ref=e194]
+              - paragraph [ref=e195]: Substantial, structured linen for tailored suiting and occasion wear.
+              - generic [ref=e196]:
+                - generic [ref=e197]: 100% Linen
+                - generic [ref=e198]: ·
+                - generic [ref=e199]: 58 inches
+                - generic [ref=e200]: ·
+                - generic [ref=e201]: 240 GSM
+              - generic [ref=e202]:
+                - link "Order via WhatsApp" [ref=e203] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Heavy%20Linen%20Suiting%20(linen%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e204] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Heavy%20Linen%20Suiting.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e206]:
+            - link "100% Cotton Poplin Featured" [ref=e207] [cursor=pointer]:
+              - /url: /fabrics/cotton/100-cotton-poplin
+              - img "100% Cotton Poplin" [ref=e208]
+              - generic [ref=e209]: Featured
+            - generic [ref=e210]:
+              - generic [ref=e212]: cotton
+              - link "100% Cotton Poplin" [ref=e213] [cursor=pointer]:
+                - /url: /fabrics/cotton/100-cotton-poplin
+                - heading "100% Cotton Poplin" [level=3] [ref=e214]
+              - paragraph [ref=e215]: Crisp, smooth, classic. The essential shirting cotton.
+              - generic [ref=e216]:
+                - generic [ref=e217]: 100% Cotton
+                - generic [ref=e218]: ·
+                - generic [ref=e219]: 58 inches
+                - generic [ref=e220]: ·
+                - generic [ref=e221]: 110 GSM
+              - generic [ref=e222]:
+                - link "Order via WhatsApp" [ref=e223] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20100%25%20Cotton%20Poplin%20(cotton%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e224] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20100%25%20Cotton%20Poplin.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e226]:
+            - link "Cotton Lycra Stretch" [ref=e227] [cursor=pointer]:
+              - /url: /fabrics/cotton/cotton-lycra-stretch
+              - img "Cotton Lycra Stretch" [ref=e228]
+            - generic [ref=e229]:
+              - generic [ref=e231]: cotton
+              - link "Cotton Lycra Stretch" [ref=e232] [cursor=pointer]:
+                - /url: /fabrics/cotton/cotton-lycra-stretch
+                - heading "Cotton Lycra Stretch" [level=3] [ref=e233]
+              - paragraph [ref=e234]: Everyday stretch cotton. Comfortable, durable, versatile.
+              - generic [ref=e235]:
+                - generic [ref=e236]: 95% Cotton, 5% Lycra
+                - generic [ref=e237]: ·
+                - generic [ref=e238]: 60 inches
+                - generic [ref=e239]: ·
+                - generic [ref=e240]: 200 GSM
+              - generic [ref=e241]:
+                - link "Order via WhatsApp" [ref=e242] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Cotton%20Lycra%20Stretch%20(cotton%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e243] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Cotton%20Lycra%20Stretch.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e245]:
+            - link "Cotton Twill — Chino Weight Featured" [ref=e246] [cursor=pointer]:
+              - /url: /fabrics/twill/cotton-twill-chino
+              - img "Cotton Twill — Chino Weight" [ref=e247]
+              - generic [ref=e248]: Featured
+            - generic [ref=e249]:
+              - generic [ref=e251]: twill
+              - link "Cotton Twill — Chino Weight" [ref=e252] [cursor=pointer]:
+                - /url: /fabrics/twill/cotton-twill-chino
+                - heading "Cotton Twill — Chino Weight" [level=3] [ref=e253]
+              - paragraph [ref=e254]: The fabric behind great chinos. Diagonal weave, excellent drape.
+              - generic [ref=e255]:
+                - generic [ref=e256]: 100% Cotton
+                - generic [ref=e257]: ·
+                - generic [ref=e258]: 58 inches
+                - generic [ref=e259]: ·
+                - generic [ref=e260]: 230 GSM
+              - generic [ref=e261]:
+                - link "Order via WhatsApp" [ref=e262] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Cotton%20Twill%20%E2%80%94%20Chino%20Weight%20(twill%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e263] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Cotton%20Twill%20%E2%80%94%20Chino%20Weight.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e265]:
+            - link "Dobby Weave Shirting Featured" [ref=e266] [cursor=pointer]:
+              - /url: /fabrics/shirting/dobby-weave-shirting
+              - img "Dobby Weave Shirting" [ref=e267]
+              - generic [ref=e268]: Featured
+            - generic [ref=e269]:
+              - generic [ref=e271]: shirting
+              - link "Dobby Weave Shirting" [ref=e272] [cursor=pointer]:
+                - /url: /fabrics/shirting/dobby-weave-shirting
+                - heading "Dobby Weave Shirting" [level=3] [ref=e273]
+              - paragraph [ref=e274]: Textured shirting with subtle woven pattern. Elevated everyday fabric.
+              - generic [ref=e275]:
+                - generic [ref=e276]: 100% Cotton
+                - generic [ref=e277]: ·
+                - generic [ref=e278]: 58 inches
+                - generic [ref=e279]: ·
+                - generic [ref=e280]: 120 GSM
+              - generic [ref=e281]:
+                - link "Order via WhatsApp" [ref=e282] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Dobby%20Weave%20Shirting%20(shirting%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e283] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Dobby%20Weave%20Shirting.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e285]:
+            - link "Poly-Viscose Suiting Featured" [ref=e286] [cursor=pointer]:
+              - /url: /fabrics/suiting/poly-viscose-suiting
+              - img "Poly-Viscose Suiting" [ref=e287]
+              - generic [ref=e288]: Featured
+            - generic [ref=e289]:
+              - generic [ref=e291]: suiting
+              - link "Poly-Viscose Suiting" [ref=e292] [cursor=pointer]:
+                - /url: /fabrics/suiting/poly-viscose-suiting
+                - heading "Poly-Viscose Suiting" [level=3] [ref=e293]
+              - paragraph [ref=e294]: Structured suiting with excellent shape retention and drape.
+              - generic [ref=e295]:
+                - generic [ref=e296]: 65% Polyester, 35% Viscose
+                - generic [ref=e297]: ·
+                - generic [ref=e298]: 58 inches
+                - generic [ref=e299]: ·
+                - generic [ref=e300]: 260 GSM
+              - generic [ref=e301]:
+                - link "Order via WhatsApp" [ref=e302] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Poly-Viscose%20Suiting%20(suiting%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e303] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Poly-Viscose%20Suiting.%20What%20are%20the%20options%20and%20pricing%3F
+          - generic [ref=e305]:
+            - link "Corduroy Furnishing Fabric Featured" [ref=e306] [cursor=pointer]:
+              - /url: /fabrics/furnishing/corduroy-furnishing-fabric
+              - img "Corduroy Furnishing Fabric" [ref=e307]
+              - generic [ref=e308]: Featured
+            - generic [ref=e309]:
+              - generic [ref=e310]:
+                - generic [ref=e311]: furnishing
+                - generic [ref=e312]: 8-wale
+              - link "Corduroy Furnishing Fabric" [ref=e313] [cursor=pointer]:
+                - /url: /fabrics/furnishing/corduroy-furnishing-fabric
+                - heading "Corduroy Furnishing Fabric" [level=3] [ref=e314]
+              - paragraph [ref=e315]: Heavy-duty corduroy built for upholstery. Rich texture, long life.
+              - generic [ref=e316]:
+                - generic [ref=e317]: 100% Cotton
+                - generic [ref=e318]: ·
+                - generic [ref=e319]: 54 inches
+                - generic [ref=e320]: ·
+                - generic [ref=e321]: 380 GSM
+              - generic [ref=e322]:
+                - link "Order via WhatsApp" [ref=e323] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'm%20interested%20in%20the%20Corduroy%20Furnishing%20Fabric%20(furnishing%20fabric).%20Could%20you%20share%20pricing%20and%20availability%3F
+                - link "Sample" [ref=e324] [cursor=pointer]:
+                  - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20order%20a%20sample%20or%20shade%20chart%20for%20Corduroy%20Furnishing%20Fabric.%20What%20are%20the%20options%20and%20pricing%3F
+  - contentinfo [ref=e325]:
+    - generic [ref=e326]:
+      - generic [ref=e327]:
+        - generic [ref=e328]:
+          - link "KodTex" [ref=e329] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e330]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e331]:
+            - link "vivekk.men@gmail.com" [ref=e332] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e333]
+              - text: vivekk.men@gmail.com
+            - link "+91 7990273955" [ref=e336] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e337]
+              - text: +91 7990273955
+            - generic [ref=e339]:
+              - img [ref=e340]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e343]:
+            - link "KodTex Instagram" [ref=e344] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e345]
+            - link "WhatsApp" [ref=e349] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e350]:
+          - heading "Fabrics" [level=4] [ref=e351]
+          - list [ref=e352]:
+            - listitem [ref=e353]:
+              - link "Corduroy" [ref=e354] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e355]:
+              - link "Linen" [ref=e356] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e357]:
+              - link "Cotton" [ref=e358] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e359]:
+              - link "Twill" [ref=e360] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e361]:
+              - link "Shirting" [ref=e362] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e363]:
+              - link "Suiting" [ref=e364] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e365]:
+              - link "Furnishing" [ref=e366] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e367]:
+          - heading "Company" [level=4] [ref=e368]
+          - list [ref=e369]:
+            - listitem [ref=e370]:
+              - link "About KodTex" [ref=e371] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e372]:
+              - link "Trade & Bulk" [ref=e373] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e374]:
+              - link "Contact Us" [ref=e375] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e376]:
+              - link "FAQ" [ref=e377] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e378]:
+          - heading "Fabric Guide" [level=4] [ref=e379]
+          - list [ref=e380]:
+            - listitem [ref=e381]:
+              - link "The Fabric Guide" [ref=e382] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e383]:
+              - link "Corduroy Guide" [ref=e384] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e385]:
+              - link "Linen Guide" [ref=e386] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e387]:
+              - link "Fabric Care" [ref=e388] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e389]:
+        - paragraph [ref=e390]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e391] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e392]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp":
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - button "Open Next.js Dev Tools" [ref=e398] [cursor=pointer]:
+    - img [ref=e399]
+  - alert [ref=e402]

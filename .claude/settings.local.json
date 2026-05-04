@@ -11,7 +11,20 @@
       "Bash(npx tsc *)",
       "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\('instagram'\\)\\)\\)\")",
       "Bash(npm run *)",
-      "WebFetch(domain:localhost)"
+      "WebFetch(domain:localhost)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\arnav\\\\Desktop\\\\Arnav\\\\PROJECTS\\\\KodTex-website\" -Force)",
+      "Bash(Select-Object Name, FullName)",
+      "Bash(Format-Table -AutoSize)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Users\\\\arnav\\\\Desktop\\\\Arnav\\\\PROJECTS\\\\KodTex-website\\\\kodtex-website\\\\public\" -Force -Recurse | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\('C:\\\\Users\\\\arnav\\\\Desktop\\\\Arnav\\\\PROJECTS\\\\KodTex-website\\\\kodtex-website\\\\', ''\\) })",
+      "Bash(Start-Sleep -Seconds 5)",
+      "Bash(Get-Content \"C:\\\\Users\\\\arnav\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-arnav-Desktop-Arnav-PROJECTS-KodTex-website\\\\fac8564d-d6d3-4220-8251-3d064dc093d7\\\\tasks\\\\bn70bmuvj.output\" -Tail 10)",
+      "mcp__playwright__browser_resize",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_evaluate",
+      "Bash(Select-Object Name, Mode)"
     ]
-  }
+  },
+  "spinnerTipsEnabled": true,
+  "prefersReducedMotion": false
 }

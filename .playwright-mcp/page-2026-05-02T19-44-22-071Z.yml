@@ -1,0 +1,199 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "KodTex" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: KodTex
+      - button "Toggle menu" [ref=e6]:
+        - img [ref=e7]
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: FAQ
+        - heading "Common questions." [level=2] [ref=e14]
+        - paragraph [ref=e15]: Can't find your answer? WhatsApp us — we'll reply personally.
+      - generic [ref=e17]:
+        - heading "Ordering" [level=2] [ref=e18]
+        - region [ref=e19]:
+          - heading "Is there a minimum order quantity?" [level=3] [ref=e21]:
+            - button "Is there a minimum order quantity?" [ref=e22]:
+              - text: Is there a minimum order quantity?
+              - img
+          - heading "How do I place an order?" [level=3] [ref=e24]:
+            - button "How do I place an order?" [ref=e25]:
+              - text: How do I place an order?
+              - img
+          - heading "Do you show prices on the website?" [level=3] [ref=e27]:
+            - button "Do you show prices on the website?" [ref=e28]:
+              - text: Do you show prices on the website?
+              - img
+          - heading "What payment methods do you accept?" [level=3] [ref=e30]:
+            - button "What payment methods do you accept?" [ref=e31]:
+              - text: What payment methods do you accept?
+              - img
+      - generic [ref=e33]:
+        - heading "Samples" [level=2] [ref=e34]
+        - region [ref=e35]:
+          - heading "Can I get fabric samples before ordering?" [level=3] [ref=e37]:
+            - button "Can I get fabric samples before ordering?" [ref=e38]:
+              - text: Can I get fabric samples before ordering?
+              - img
+          - heading "What is a shade chart?" [level=3] [ref=e40]:
+            - button "What is a shade chart?" [ref=e41]:
+              - text: What is a shade chart?
+              - img
+          - heading "How long does it take to receive samples?" [level=3] [ref=e43]:
+            - button "How long does it take to receive samples?" [ref=e44]:
+              - text: How long does it take to receive samples?
+              - img
+      - generic [ref=e46]:
+        - heading "Customisation" [level=2] [ref=e47]
+        - region [ref=e48]:
+          - heading "Can I customise my order?" [level=3] [ref=e50]:
+            - button "Can I customise my order?" [ref=e51]:
+              - text: Can I customise my order?
+              - img
+          - heading "Do you offer custom colours or dyeing?" [level=3] [ref=e53]:
+            - button "Do you offer custom colours or dyeing?" [ref=e54]:
+              - text: Do you offer custom colours or dyeing?
+              - img
+          - heading "Can I get fabric in specific widths or weights?" [level=3] [ref=e56]:
+            - button "Can I get fabric in specific widths or weights?" [ref=e57]:
+              - text: Can I get fabric in specific widths or weights?
+              - img
+      - generic [ref=e59]:
+        - heading "Delivery" [level=2] [ref=e60]
+        - region [ref=e61]:
+          - heading "Do you deliver across India?" [level=3] [ref=e63]:
+            - button "Do you deliver across India?" [ref=e64]:
+              - text: Do you deliver across India?
+              - img
+          - heading "Do you ship internationally?" [level=3] [ref=e66]:
+            - button "Do you ship internationally?" [ref=e67]:
+              - text: Do you ship internationally?
+              - img
+          - heading "Can I pick up from your Ahmedabad location?" [level=3] [ref=e69]:
+            - button "Can I pick up from your Ahmedabad location?" [ref=e70]:
+              - text: Can I pick up from your Ahmedabad location?
+              - img
+      - generic [ref=e72]:
+        - heading "Fabric Care" [level=2] [ref=e73]
+        - region [ref=e74]:
+          - heading "How should I care for corduroy fabric?" [level=3] [ref=e76]:
+            - button "How should I care for corduroy fabric?" [ref=e77]:
+              - text: How should I care for corduroy fabric?
+              - img
+          - heading "How do I care for linen fabric?" [level=3] [ref=e79]:
+            - button "How do I care for linen fabric?" [ref=e80]:
+              - text: How do I care for linen fabric?
+              - img
+          - heading "Will the fabric shrink after washing?" [level=3] [ref=e82]:
+            - button "Will the fabric shrink after washing?" [ref=e83]:
+              - text: Will the fabric shrink after washing?
+              - img
+      - generic [ref=e85]:
+        - heading "Trade & Bulk" [level=2] [ref=e86]
+        - region [ref=e87]:
+          - heading "Do you supply to businesses and trade buyers?" [level=3] [ref=e89]:
+            - button "Do you supply to businesses and trade buyers?" [ref=e90]:
+              - text: Do you supply to businesses and trade buyers?
+              - img
+          - heading "Are there better prices for bulk orders?" [level=3] [ref=e92]:
+            - button "Are there better prices for bulk orders?" [ref=e93]:
+              - text: Are there better prices for bulk orders?
+              - img
+      - generic [ref=e95]:
+        - heading "Still have questions?" [level=3] [ref=e96]
+        - paragraph [ref=e97]: WhatsApp us directly — we reply personally, not via bots.
+        - link "WhatsApp Us →" [ref=e98] [cursor=pointer]:
+          - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - contentinfo [ref=e99]:
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - link "KodTex" [ref=e103] [cursor=pointer]:
+            - /url: /
+          - paragraph [ref=e104]: Premium fabrics, your way. No minimum order. Fully customisable. Backed by 70 years of Kailash Vivek & Co.
+          - generic [ref=e105]:
+            - link "vivekk.men@gmail.com" [ref=e106] [cursor=pointer]:
+              - /url: mailto:vivekk.men@gmail.com
+              - img [ref=e107]
+              - text: vivekk.men@gmail.com
+            - link "+91 79902 73955" [ref=e110] [cursor=pointer]:
+              - /url: tel:+917990273955
+              - img [ref=e111]
+              - text: +91 79902 73955
+            - generic [ref=e113]:
+              - img [ref=e114]
+              - text: N.C. Market, Ahmedabad, Gujarat
+          - generic [ref=e117]:
+            - link "KodTex Instagram" [ref=e118] [cursor=pointer]:
+              - /url: https://www.instagram.com/kodtex/
+              - img [ref=e119]
+            - link "WhatsApp" [ref=e123] [cursor=pointer]:
+              - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+        - generic [ref=e124]:
+          - heading "Fabrics" [level=4] [ref=e125]
+          - list [ref=e126]:
+            - listitem [ref=e127]:
+              - link "Corduroy" [ref=e128] [cursor=pointer]:
+                - /url: /fabrics/corduroy
+            - listitem [ref=e129]:
+              - link "Linen" [ref=e130] [cursor=pointer]:
+                - /url: /fabrics/linen
+            - listitem [ref=e131]:
+              - link "Cotton" [ref=e132] [cursor=pointer]:
+                - /url: /fabrics/cotton
+            - listitem [ref=e133]:
+              - link "Twill" [ref=e134] [cursor=pointer]:
+                - /url: /fabrics/twill
+            - listitem [ref=e135]:
+              - link "Shirting" [ref=e136] [cursor=pointer]:
+                - /url: /fabrics/shirting
+            - listitem [ref=e137]:
+              - link "Suiting" [ref=e138] [cursor=pointer]:
+                - /url: /fabrics/suiting
+            - listitem [ref=e139]:
+              - link "Furnishing" [ref=e140] [cursor=pointer]:
+                - /url: /fabrics/furnishing
+        - generic [ref=e141]:
+          - heading "Company" [level=4] [ref=e142]
+          - list [ref=e143]:
+            - listitem [ref=e144]:
+              - link "About KodTex" [ref=e145] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e146]:
+              - link "Trade & Bulk" [ref=e147] [cursor=pointer]:
+                - /url: /trade
+            - listitem [ref=e148]:
+              - link "Contact Us" [ref=e149] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e150]:
+              - link "FAQ" [ref=e151] [cursor=pointer]:
+                - /url: /faq
+        - generic [ref=e152]:
+          - heading "Fabric Guide" [level=4] [ref=e153]
+          - list [ref=e154]:
+            - listitem [ref=e155]:
+              - link "The Fabric Guide" [ref=e156] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e157]:
+              - link "Corduroy Guide" [ref=e158] [cursor=pointer]:
+                - /url: /blog/corduroy-guide
+            - listitem [ref=e159]:
+              - link "Linen Guide" [ref=e160] [cursor=pointer]:
+                - /url: /blog/linen-guide
+            - listitem [ref=e161]:
+              - link "Fabric Care" [ref=e162] [cursor=pointer]:
+                - /url: /blog/fabric-care
+      - generic [ref=e163]:
+        - paragraph [ref=e164]:
+          - text: KodTex is a brand of
+          - link "Kailash Vivek & Co." [ref=e165] [cursor=pointer]:
+            - /url: https://www.kailashvivek.com/
+          - text: "· Est. 1954 · ISO 9001:2008 · GST: 24AFCPM9485J1ZZ · Ahmedabad, Gujarat"
+        - paragraph [ref=e166]: © 2026 KodTex. All rights reserved.
+  - link "Chat with KodTex on WhatsApp":
+    - /url: https://wa.me/917990273955?text=Hi%20KodTex!%20I'd%20like%20to%20know%20more%20about%20your%20fabrics.
+  - button "Open Next.js Dev Tools" [ref=e172] [cursor=pointer]:
+    - img [ref=e173]
