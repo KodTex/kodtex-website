@@ -25,7 +25,7 @@ export default function Home() {
         body="4-wale to 21-wale. Structured, dobby, stretch, yarn-dyed, indigo wash. Every finish for every application. Built on decades of corduroy expertise from Kailash Vivek & Co."
         ctaLabel="Explore Corduroy"
         ctaHref="/fabrics/corduroy"
-        imageSrc="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=85"
+        imageSrc="/images/fabrics/corduroy/14-wale-cotton-corduroy.jpg"
         imageAlt="Close-up of corduroy wale texture"
         tags={[
           { label: "4-wale" },
@@ -43,7 +43,7 @@ export default function Home() {
         body="Natural, breathable, authentic. Linen's natural slub texture makes every length unique. Our pure linen and linen-cotton blends get softer with every wash — built for makers who appreciate honest materials."
         ctaLabel="Explore Linen"
         ctaHref="/fabrics/linen"
-        imageSrc="https://images.unsplash.com/photo-1618354691792-d1d42acfd860?w=900&q=85"
+        imageSrc="/images/fabrics/linen/fine-melange-linen.JPG"
         imageAlt="Close-up of linen slub texture"
         imageRight
       />

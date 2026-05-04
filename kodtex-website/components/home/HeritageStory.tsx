@@ -88,7 +88,7 @@ export default function HeritageStory() {
           <AnimatedSection direction="right" delay={0.15}>
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+                src="/images/hero/hero-corduroy.jpg"
                 alt="Fabric rolls at Kailash Vivek & Co. warehouse"
                 className="w-full h-full object-cover"
               />

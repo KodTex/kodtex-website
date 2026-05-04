@@ -27,7 +27,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1920&q=90')`,
+            backgroundImage: `url('/images/hero/hero-fabric-rolls.jpg')`,
           }}
         />
         {/* Dark overlay for text legibility */}

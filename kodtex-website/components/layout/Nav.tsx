@@ -56,14 +56,12 @@ export default function Nav() {
             className="flex items-center gap-2"
             onClick={() => setIsOpen(false)}
           >
-            <span
-              className={cn(
-                "font-heading text-2xl font-normal tracking-tight transition-colors",
-                isScrolled ? "text-charcoal" : "text-white"
-              )}
-            >
-              KodTex
-            </span>
+            <img
+              src="/images/logo/logo.svg"
+              alt="KodTex"
+              className="h-8 w-auto transition-all"
+              style={{ filter: isScrolled ? undefined : "brightness(0) invert(1)" }}
+            />
           </Link>
 
           {/* Desktop Nav */}
