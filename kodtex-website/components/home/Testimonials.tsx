@@ -3,6 +3,8 @@ import SectionHeading from "@/components/shared/SectionHeading";
 import { ShieldCheck } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
 
+const rotationClasses = ["rotate-0", "rotate-[0.5deg]", "-rotate-[0.8deg]"];
+
 export default function Testimonials() {
   return (
     <section className="py-24 md:py-32 bg-ivory">
@@ -22,8 +24,7 @@ export default function Testimonials() {
               delay={i * 0.1}
             >
               <div
-                className="bg-ivory border border-sand/30 p-8 flex flex-col gap-5 h-full shadow-[0_2px_16px_rgba(26,30,38,0.055)]"
-                style={{ transform: `rotate(${i === 1 ? "0.5deg" : i === 2 ? "-0.8deg" : "0deg"})` }}
+                className={`bg-linen-white border border-sand/40 p-8 flex flex-col gap-6 h-full shadow-[0_2px_16px_rgba(26,30,38,0.055)] ${rotationClasses[i] ?? "rotate-0"}`}
               >
                 {/* Stars */}
                 <div className="flex items-center gap-1">
@@ -31,7 +32,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote mark */}
-                <span className="font-heading text-8xl text-terracotta/20 leading-none -mb-6 select-none">
+                <span aria-hidden="true" className="font-heading text-6xl text-terracotta/30 leading-none -mb-4 select-none">
                   &ldquo;
                 </span>
 

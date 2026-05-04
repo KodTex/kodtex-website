@@ -51,13 +51,13 @@ export default function WhyKodTex() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/5">
           {usps.map((usp, i) => (
             <AnimatedSection key={usp.number} delay={i * 0.07}>
-              <div className="relative bg-deep-slate p-8 md:p-10 flex flex-col gap-4 h-full group overflow-hidden transition-colors hover:bg-white/[0.03]">
+              <div className="relative bg-deep-slate p-8 md:p-10 flex flex-col gap-4 h-full group overflow-hidden border border-transparent hover:border-white/10 transition-all">
                 {/* Gradient border glow on hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                   <div className="absolute inset-0 border border-terracotta/20 rounded-none" />
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-terracotta/30 to-transparent" />
                 </div>
-                <span className="text-white/15 font-heading text-6xl leading-none select-none">
+                <span className="text-white/15 font-heading text-4xl leading-none select-none">
                   {usp.number}
                 </span>
                 <h3 className="text-ivory font-semibold text-lg">

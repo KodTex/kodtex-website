@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useMotionValueEvent, useScroll } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { InstagramIcon } from "@/components/shared/Icons";
@@ -20,6 +21,7 @@ export default function Nav() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { scrollY } = useScroll();
+  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 60);
@@ -49,7 +51,7 @@ export default function Nav() {
         animate={{ y: 0 }}
         transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
       >
-        <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-18 flex items-center justify-between">
+        <div className="max-w-[1320px] mx-auto px-6 md:px-10 h-16 md:h-[72px] flex items-center justify-between">
           {/* Logo */}
           <Link
             href="/"
@@ -66,22 +68,27 @@ export default function Nav() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "text-sm font-medium tracking-wide transition-colors relative group",
-                  isScrolled ? "text-charcoal" : "text-white"
-                )}
-              >
-                {link.label}
-                <span className={cn(
-                  "absolute -bottom-0.5 left-0 h-px w-0 group-hover:w-full transition-all duration-300",
-                  isScrolled ? "bg-terracotta" : "bg-white"
-                )} />
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || pathname.startsWith(link.href + "/");
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    "text-sm font-medium tracking-wide transition-colors relative group focus-visible:outline-none focus-visible:underline",
+                    isScrolled ? "text-charcoal" : "text-white",
+                    isActive && isScrolled && "text-terracotta",
+                    isActive && !isScrolled && "text-terracotta-light"
+                  )}
+                >
+                  {link.label}
+                  <span className={cn(
+                    "absolute -bottom-0.5 left-0 h-px w-0 group-hover:w-full transition-all duration-300",
+                    isScrolled ? "bg-terracotta" : "bg-white"
+                  )} />
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Right Actions */}
@@ -112,8 +119,9 @@ export default function Nav() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
+            aria-expanded={isOpen}
             className={cn(
-              "md:hidden transition-colors",
+              "md:hidden p-2 -mr-2 transition-colors",
               isScrolled ? "text-charcoal" : "text-white"
             )}
           >
@@ -144,7 +152,10 @@ export default function Nav() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="font-heading text-4xl text-ivory hover:text-terracotta transition-colors block"
+                      className={cn(
+                        "font-heading text-4xl transition-colors block",
+                        pathname === link.href ? "text-terracotta" : "text-ivory hover:text-terracotta"
+                      )}
                     >
                       {link.label}
                     </Link>

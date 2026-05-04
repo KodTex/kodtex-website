@@ -37,6 +37,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
         <img
           src={imageSrc}
           alt={product.name}
+          loading="lazy"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {/* Hover overlay */}
@@ -59,7 +60,7 @@ export default function ProductCard({ product, className }: ProductCardProps) {
             {product.category}
           </span>
           {product.wale && (
-            <span className="text-[10px] font-medium tracking-[0.08em] text-charcoal/40">
+            <span className="text-xs font-medium tracking-[0.08em] text-charcoal/60">
               {product.wale}
             </span>
           )}

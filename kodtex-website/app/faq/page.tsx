@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function FAQPage() {
   return (
-    <div className="pt-24 pb-24 min-h-screen">
+    <div className="pt-24 pb-24">
       <div className="max-w-[820px] mx-auto px-6 md:px-10 pt-10">
         <AnimatedSection>
           <SectionHeading

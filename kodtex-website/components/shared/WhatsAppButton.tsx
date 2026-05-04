@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { wa } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
 
@@ -38,7 +38,7 @@ export function WhatsAppInline({
         target="_blank"
         rel="noopener noreferrer"
         className={cn(
-          "inline-flex items-center gap-2 border border-white/40 text-white px-5 py-2.5 text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/70 rounded-sm",
+          "inline-flex items-center gap-2 border border-white/60 text-white px-5 py-2.5 text-sm font-medium tracking-wide transition-all hover:bg-white/10 hover:border-white/80 rounded-sm",
           className
         )}
       >
@@ -65,25 +65,29 @@ export function WhatsAppInline({
 }
 
 export default function WhatsAppButton() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <motion.a
       href={wa.general()}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Chat with KodTex on WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/30"
+      className="fixed bottom-8 right-4 md:bottom-6 md:right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/30"
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1.5, type: "spring", stiffness: 300, damping: 20 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <motion.div
-        className="absolute inset-0 rounded-full bg-[#25D366]"
-        animate={{ scale: [1, 1.3, 1] }}
-        transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1 }}
-        style={{ opacity: 0.4 }}
-      />
+      {!shouldReduceMotion && (
+        <motion.div
+          className="absolute inset-0 rounded-full bg-[#25D366]"
+          animate={{ scale: [1, 1.3, 1] }}
+          transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 1 }}
+          style={{ opacity: 0.4 }}
+        />
+      )}
       <WhatsAppIcon size={26} />
     </motion.a>
   );

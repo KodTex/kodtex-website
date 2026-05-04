@@ -26,10 +26,10 @@ export default function Marquee() {
   return (
     <div className="bg-warm-black border-y border-white/5 py-3.5 overflow-hidden group">
       <div className="flex">
-        <div className="flex items-center animate-marquee whitespace-nowrap will-change-transform">
+        <div className="flex animate-marquee whitespace-nowrap will-change-transform">
           {segments}{segments}
         </div>
-        <div className="flex items-center animate-marquee whitespace-nowrap will-change-transform" aria-hidden="true">
+        <div className="flex animate-marquee whitespace-nowrap will-change-transform" aria-hidden="true">
           {segments}{segments}
         </div>
       </div>

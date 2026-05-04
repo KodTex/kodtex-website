@@ -34,7 +34,7 @@ export default function FabricsPage() {
       </div>
 
       {/* Sticky filter bar */}
-      <div className="sticky top-16 z-20 bg-ivory/95 backdrop-blur-sm border-b border-sand/40 py-4">
+      <div className="sticky top-[64px] md:top-[72px] z-20 bg-ivory/95 backdrop-blur-sm border-b border-sand/40 py-4">
         <div className="max-w-[1320px] mx-auto px-6 md:px-10">
           <FilterBar active={active} onChange={setActive} />
         </div>
@@ -42,7 +42,7 @@ export default function FabricsPage() {
 
       {/* Product Grid */}
       <div className="max-w-[1320px] mx-auto px-6 md:px-10 pt-10">
-        <div className="text-sm text-charcoal/40 mb-8">
+        <div className="text-sm text-charcoal/60 mb-8">
           {filtered.length} fabric{filtered.length !== 1 ? "s" : ""}
           {active !== "all" && ` in ${active}`}
         </div>
