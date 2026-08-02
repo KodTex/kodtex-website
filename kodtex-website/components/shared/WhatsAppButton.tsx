@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { wa } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
@@ -66,6 +67,11 @@ export function WhatsAppInline({
 
 export default function WhatsAppButton() {
   const shouldReduceMotion = useReducedMotion();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <motion.a
@@ -80,7 +86,7 @@ export default function WhatsAppButton() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      {!shouldReduceMotion && (
+      {mounted && !shouldReduceMotion && (
         <motion.div
           className="absolute inset-0 rounded-full bg-[#25D366]"
           animate={{ scale: [1, 1.3, 1] }}

@@ -95,7 +95,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[3/4] overflow-hidden bg-sand/20">
                   <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+                    src="/images/hero/hero-corduroy-olive.jpg"
                     alt="Fabric rolls at Kailash Vivek & Co."
                     className="w-full h-full object-cover"
                   />

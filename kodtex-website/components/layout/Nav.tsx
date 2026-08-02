@@ -18,14 +18,18 @@ const navLinks = [
 ];
 
 export default function Nav() {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const { scrollY } = useScroll();
   const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    setIsScrolled(latest > 60);
+    setScrolled(latest > 60);
   });
+
+  // Only the homepage hero has a guaranteed dark backdrop for the transparent
+  // nav to sit on; every other page defaults to the opaque, legible style.
+  const isScrolled = pathname === "/" ? scrolled : true;
 
   useEffect(() => {
     if (isOpen) {
@@ -62,7 +66,7 @@ export default function Nav() {
               src="/images/logo/logo.svg"
               alt="KodTex"
               className="h-8 w-auto transition-all"
-              style={{ filter: isScrolled ? undefined : "brightness(0) invert(1)" }}
+              style={{ filter: isScrolled ? undefined : "drop-shadow(0 1px 4px rgba(0,0,0,0.5))" }}
             />
           </Link>
 

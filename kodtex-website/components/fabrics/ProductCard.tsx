@@ -10,18 +10,8 @@ interface ProductCardProps {
   className?: string;
 }
 
-const categoryImages: Record<string, string> = {
-  corduroy: "/images/fabrics/corduroy/14-wale-cotton-corduroy.jpg",
-  linen: "/images/fabrics/linen/fine-melange-linen.JPG",
-  cotton: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=600&q=80",
-  twill: "/images/fabrics/twill/desire-pc-twill.jpg",
-  shirting: "/images/fabrics/shirting/pc-shirting.JPG",
-  suiting: "https://images.unsplash.com/photo-1612731847459-f4b5c0c0c1f0?w=600&q=80",
-  furnishing: "/images/fabrics/furnishing/6-wale-(6005-2)-structured-corduroy.JPG",
-};
-
 export default function ProductCard({ product, className }: ProductCardProps) {
-  const imageSrc = categoryImages[product.category];
+  const imageSrc = product.images[0];
 
   return (
     <motion.div

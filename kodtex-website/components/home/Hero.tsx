@@ -27,7 +27,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/hero/hero-fabric-rolls.jpg')`,
+            backgroundImage: `url('/images/hero/hero-corduroy-mdbrown.jpg')`,
           }}
         />
         {/* Dark overlay for text legibility */}

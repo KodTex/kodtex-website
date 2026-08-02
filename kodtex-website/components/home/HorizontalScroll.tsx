@@ -5,12 +5,12 @@ import { motion, useReducedMotion } from "motion/react";
 import { categories } from "@/data/categories";
 
 const categoryImages: Record<string, string> = {
-  corduroy: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=85",
+  corduroy: "/images/hero/hero-corduroy-black.jpg",
   linen: "https://images.unsplash.com/photo-1618354691792-d1d42acfd860?w=900&q=85",
   cotton: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&q=85",
   twill: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=900&q=85",
-  shirting: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85",
-  suiting: "https://images.unsplash.com/photo-1612731847459-f4b5c0c0c1f0?w=900&q=85",
+  shirting: "/images/fabrics/shirting/dobby-shirting-navy.jpg",
+  suiting: "https://images.unsplash.com/photo-1636715986446-d58f0f9b3916?w=900&q=85",
   furnishing: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
 };
 
