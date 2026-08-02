@@ -3,14 +3,15 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { categories } from "@/data/categories";
+import { withBase } from "@/lib/paths";
 
 const categoryImages: Record<string, string> = {
-  corduroy: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=900&q=85",
+  corduroy: "/images/hero/hero-corduroy-black.jpg",
   linen: "https://images.unsplash.com/photo-1618354691792-d1d42acfd860?w=900&q=85",
   cotton: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&q=85",
   twill: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=900&q=85",
-  shirting: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85",
-  suiting: "https://images.unsplash.com/photo-1612731847459-f4b5c0c0c1f0?w=900&q=85",
+  shirting: "/images/fabrics/shirting/dobby-shirting-navy.jpg",
+  suiting: "https://images.unsplash.com/photo-1636715986446-d58f0f9b3916?w=900&q=85",
   furnishing: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=900&q=85",
 };
 
@@ -41,7 +42,7 @@ function DesktopHorizontalScroll() {
             >
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url('${categoryImages[cat.slug]}')` }}
+                style={{ backgroundImage: `url('${withBase(categoryImages[cat.slug])}')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/20 to-transparent" />
               <div className="absolute bottom-8 left-7">
@@ -77,7 +78,7 @@ function MobileCategoryCards() {
           <div key={cat.slug} className="relative h-[60vw] min-h-[220px] overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('${categoryImages[cat.slug]}')` }}
+              style={{ backgroundImage: `url('${withBase(categoryImages[cat.slug])}')` }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/30 to-warm-black/10" />
             <div className="absolute bottom-5 left-6 right-6">

@@ -5,6 +5,7 @@ import { getProductsByCategory, FabricCategory } from "@/data/products";
 import ProductCard from "@/components/fabrics/ProductCard";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import SectionHeading from "@/components/shared/SectionHeading";
+import { withBase } from "@/lib/paths";
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -25,12 +26,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const categoryImages: Record<string, string> = {
-  corduroy: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=1600&q=85",
+  corduroy: "/images/fabrics/corduroy/category-hero-khakhi.jpg",
   linen: "https://images.unsplash.com/photo-1618354691792-d1d42acfd860?w=1600&q=85",
   cotton: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=1600&q=85",
   twill: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=1600&q=85",
-  shirting: "https://images.unsplash.com/photo-1594938298603-c8148c4b7d0b?w=1600&q=85",
-  suiting: "https://images.unsplash.com/photo-1612731847459-f4b5c0c0c1f0?w=1600&q=85",
+  shirting: "/images/fabrics/shirting/dobby-shirting-navy.jpg",
+  suiting: "https://images.unsplash.com/photo-1636715986446-d58f0f9b3916?w=1600&q=85",
   furnishing: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1600&q=85",
 };
 
@@ -47,7 +48,7 @@ export default async function CategoryPage({ params }: Props) {
       <div className="relative h-[50vh] min-h-[360px] flex items-end overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${categoryImages[category]}')` }}
+          style={{ backgroundImage: `url('${withBase(categoryImages[category])}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/40 to-transparent" />
         <div className="relative z-10 max-w-[1320px] mx-auto px-6 md:px-10 pb-12 w-full">

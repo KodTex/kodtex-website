@@ -3,6 +3,7 @@ import { getAllPosts } from "@/lib/blog";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import SectionHeading from "@/components/shared/SectionHeading";
 import Link from "next/link";
+import { withBase } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "The Fabric Guide",
@@ -42,7 +43,7 @@ export default function BlogPage() {
                   {post.coverImage && (
                     <div className="aspect-[16/10] overflow-hidden mb-5">
                       <img
-                        src={post.coverImage}
+                        src={withBase(post.coverImage)}
                         alt={post.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />

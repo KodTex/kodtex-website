@@ -9,6 +9,11 @@ export type FabricCategory =
   | "suiting"
   | "furnishing";
 
+export interface ColourOption {
+  name: string;
+  image: string;
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -23,6 +28,7 @@ export interface Product {
   finish?: string;
   applications: string[];
   images: string[];
+  colours?: ColourOption[];
   featured: boolean;
   inStock: boolean;
   careInstructions?: string[];
@@ -44,7 +50,19 @@ export const products: Product[] = [
     wale: "14-wale",
     finish: "Piece-dyed",
     applications: ["Trousers", "Jackets", "Blazers", "Bags", "Cushions"],
-    images: ["/images/fabrics/corduroy/14-wale-cotton-corduroy.jpg"],
+    images: ["/images/fabrics/corduroy/14-wale-corduroy.jpg"],
+    colours: [
+      { name: "Beige", image: "/images/fabrics/corduroy/swatches/14-wale-beige.jpg" },
+      { name: "Black", image: "/images/fabrics/corduroy/swatches/14-wale-black.jpg" },
+      { name: "Dk. Brown", image: "/images/fabrics/corduroy/swatches/14-wale-dk-brown.jpg" },
+      { name: "Dk. Grey", image: "/images/fabrics/corduroy/swatches/14-wale-dk-grey.jpg" },
+      { name: "Khakhi", image: "/images/fabrics/corduroy/swatches/14-wale-khakhi.jpg" },
+      { name: "Md. Brown", image: "/images/fabrics/corduroy/swatches/14-wale-md-brown.jpg" },
+      { name: "Mouse", image: "/images/fabrics/corduroy/swatches/14-wale-mouse.jpg" },
+      { name: "Navy", image: "/images/fabrics/corduroy/swatches/14-wale-navy.jpg" },
+      { name: "Olive", image: "/images/fabrics/corduroy/swatches/14-wale-olive.jpg" },
+      { name: "White", image: "/images/fabrics/corduroy/swatches/14-wale-white.jpg" },
+    ],
     featured: true,
     inStock: true,
     careInstructions: ["Machine wash cold", "Tumble dry low", "Do not bleach", "Iron on reverse"],
@@ -82,8 +100,49 @@ export const products: Product[] = [
     wale: "21-wale",
     finish: "Piece-dyed",
     applications: ["Shirts", "Children's wear", "Lightweight tailoring", "Lining"],
-    images: ["/images/fabrics/corduroy/21-wale-stretchable-corduroy.jpg"],
+    images: ["/images/fabrics/corduroy/21-wale-corduroy.jpg"],
+    colours: [
+      { name: "Beige", image: "/images/fabrics/corduroy/swatches/21-wale-beige.jpg" },
+      { name: "Black", image: "/images/fabrics/corduroy/swatches/21-wale-black.jpg" },
+      { name: "Dk. Brown", image: "/images/fabrics/corduroy/swatches/21-wale-dk-brown.jpg" },
+      { name: "Md. Brown", image: "/images/fabrics/corduroy/swatches/21-wale-md-brown.jpg" },
+      { name: "Mouse", image: "/images/fabrics/corduroy/swatches/21-wale-mouse.jpg" },
+      { name: "Navy", image: "/images/fabrics/corduroy/swatches/21-wale-navy.jpg" },
+      { name: "Olive", image: "/images/fabrics/corduroy/swatches/21-wale-olive.jpg" },
+    ],
     featured: false,
+    inStock: true,
+    careInstructions: ["Machine wash cold", "Do not tumble dry", "Iron on reverse while damp"],
+  },
+  {
+    id: "c-006",
+    slug: "23-wale-corduroy",
+    name: "23-Wale Corduroy",
+    category: "corduroy",
+    shortDescription: "Our finest wale count. Ultra-fine ridges for a near-flat, luxe hand-feel.",
+    description:
+      "23-wale corduroy is the finest fabric in our corduroy range — the wales are barely visible, giving a smooth, almost flat-woven look with all the softness corduroy is loved for. A favourite for shirting and lightweight garments that want texture without bulk.",
+    composition: "100% Cotton",
+    width: "58 inches",
+    weight: "180 GSM",
+    wale: "23-wale",
+    finish: "Piece-dyed",
+    applications: ["Shirts", "Lightweight jackets", "Dresses", "Children's wear"],
+    images: ["/images/fabrics/corduroy/23-wale-corduroy.jpg"],
+    colours: [
+      { name: "Beige", image: "/images/fabrics/corduroy/swatches/23-wale-beige.jpg" },
+      { name: "Black", image: "/images/fabrics/corduroy/swatches/23-wale-black.jpg" },
+      { name: "Copper", image: "/images/fabrics/corduroy/swatches/23-wale-copper.jpg" },
+      { name: "Dk Brown", image: "/images/fabrics/corduroy/swatches/23-wale-dk-brown.jpg" },
+      { name: "Khakhi", image: "/images/fabrics/corduroy/swatches/23-wale-khakhi.jpg" },
+      { name: "Light Ash", image: "/images/fabrics/corduroy/swatches/23-wale-light-ash.jpg" },
+      { name: "Maroon", image: "/images/fabrics/corduroy/swatches/23-wale-maroon.jpg" },
+      { name: "Medium Green", image: "/images/fabrics/corduroy/swatches/23-wale-medium-green.jpg" },
+      { name: "Mouse", image: "/images/fabrics/corduroy/swatches/23-wale-mouse.jpg" },
+      { name: "Navy", image: "/images/fabrics/corduroy/swatches/23-wale-navy.jpg" },
+      { name: "Olive", image: "/images/fabrics/corduroy/swatches/23-wale-olive.jpg" },
+    ],
+    featured: true,
     inStock: true,
     careInstructions: ["Machine wash cold", "Do not tumble dry", "Iron on reverse while damp"],
   },
@@ -196,7 +255,7 @@ export const products: Product[] = [
     weight: "110 GSM",
     finish: "Piece-dyed / Printed",
     applications: ["Formal shirts", "Kurtas", "Uniforms", "Children's wear"],
-    images: ["/images/fabrics/cotton/100-cotton-poplin.jpg"],
+    images: ["https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&q=85"],
     featured: true,
     inStock: true,
     careInstructions: ["Machine wash warm", "Tumble dry", "Iron on high"],
@@ -214,7 +273,7 @@ export const products: Product[] = [
     weight: "200 GSM",
     finish: "Piece-dyed",
     applications: ["Trousers", "Fitted tops", "Casual dresses", "Athleisure"],
-    images: ["/images/fabrics/cotton/cotton-lycra-stretch.jpg"],
+    images: ["https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&q=85"],
     featured: false,
     inStock: true,
     careInstructions: ["Machine wash cold", "Do not tumble dry on high"],
@@ -254,7 +313,17 @@ export const products: Product[] = [
     weight: "120 GSM",
     finish: "Piece-dyed",
     applications: ["Formal shirts", "Casual shirts", "Resort wear"],
-    images: ["/images/fabrics/shirting/pc-shirting.JPG"],
+    images: ["/images/fabrics/shirting/dobby-shirting-navy.jpg"],
+    colours: [
+      { name: "Brown", image: "/images/fabrics/shirting/swatches/brown.jpg" },
+      { name: "Elsion Blue", image: "/images/fabrics/shirting/swatches/elsion-blue.jpg" },
+      { name: "Lilac", image: "/images/fabrics/shirting/swatches/lilac.jpg" },
+      { name: "Lt. Grey", image: "/images/fabrics/shirting/swatches/lt-grey.jpg" },
+      { name: "Mud Brown", image: "/images/fabrics/shirting/swatches/mud-brown.jpg" },
+      { name: "Navy", image: "/images/fabrics/shirting/swatches/navy.jpg" },
+      { name: "Sky Blue", image: "/images/fabrics/shirting/swatches/sky-blue.jpg" },
+      { name: "Yellow", image: "/images/fabrics/shirting/swatches/yellow.jpg" },
+    ],
     featured: true,
     inStock: true,
     careInstructions: ["Machine wash warm", "Iron while slightly damp"],
@@ -274,7 +343,7 @@ export const products: Product[] = [
     weight: "260 GSM",
     finish: "Piece-dyed",
     applications: ["Formal suits", "Blazers", "Formal trousers", "Occasion wear"],
-    images: ["/images/fabrics/suiting/poly-viscose-suiting.jpg"],
+    images: ["https://images.unsplash.com/photo-1636715986446-d58f0f9b3916?w=900&q=85"],
     featured: true,
     inStock: true,
     careInstructions: ["Dry clean recommended", "Or hand wash cold"],

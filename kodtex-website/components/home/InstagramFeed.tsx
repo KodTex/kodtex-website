@@ -1,13 +1,14 @@
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { InstagramIcon } from "@/components/shared/Icons";
+import { withBase } from "@/lib/paths";
 
 const placeholderPosts = [
-  { id: "1", imageUrl: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=400&q=80", alt: "Corduroy fabric close-up" },
+  { id: "1", imageUrl: "/images/hero/hero-corduroy-navy.jpg", alt: "Corduroy fabric close-up" },
   { id: "2", imageUrl: "https://images.unsplash.com/photo-1618354691792-d1d42acfd860?w=400&q=80", alt: "Linen texture detail" },
   { id: "3", imageUrl: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=80", alt: "Cotton fabric weave" },
   { id: "4", imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80", alt: "Fabric rolls in warehouse" },
   { id: "5", imageUrl: "https://images.unsplash.com/photo-1540574163026-643ea20ade25?w=400&q=80", alt: "Twill fabric detail" },
-  { id: "6", imageUrl: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80", alt: "Shirting fabric close-up" },
+  { id: "6", imageUrl: "/images/fabrics/shirting/dobby-shirting-navy.jpg", alt: "Shirting fabric close-up" },
 ];
 
 export default function InstagramFeed() {
@@ -44,7 +45,7 @@ export default function InstagramFeed() {
                 className="block relative aspect-square overflow-hidden group"
               >
                 <img
-                  src={post.imageUrl}
+                  src={withBase(post.imageUrl)}
                   alt={post.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

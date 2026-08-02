@@ -5,6 +5,7 @@ import { categories } from "@/data/categories";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import ProductCard from "@/components/fabrics/ProductCard";
 import { wa } from "@/lib/whatsapp";
+import { withBase } from "@/lib/paths";
 
 interface Props {
   params: Promise<{ category: string; slug: string }>;
@@ -27,16 +28,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const categoryImages: Record<string, string> = {
-  corduroy: "/images/fabrics/corduroy/14-wale-cotton-corduroy.jpg",
-  linen: "/images/fabrics/linen/fine-melange-linen.JPG",
-  cotton: "https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=900&q=85",
-  twill: "/images/fabrics/twill/desire-pc-twill.jpg",
-  shirting: "/images/fabrics/shirting/pc-shirting.JPG",
-  suiting: "https://images.unsplash.com/photo-1612731847459-f4b5c0c0c1f0?w=900&q=85",
-  furnishing: "/images/fabrics/furnishing/6-wale-(6005-2)-structured-corduroy.JPG",
-};
-
 export default async function ProductPage({ params }: Props) {
   const { slug, category } = await params;
   const product = getProductBySlug(slug);
@@ -45,7 +36,7 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product, 3);
   const whatsappUrl = getWhatsAppUrl(product);
   const sampleUrl = getSampleUrl(product);
-  const imageSrc = categoryImages[product.category];
+  const imageSrc = product.images[0];
 
   const specRows = [
     { label: "Composition", value: product.composition },
@@ -60,9 +51,9 @@ export default async function ProductPage({ params }: Props) {
       <div className="max-w-[1320px] mx-auto px-6 md:px-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-charcoal/40 mb-10 pt-4">
-          <a href="/fabrics" className="hover:text-terracotta transition-colors">Fabrics</a>
+          <a href={withBase("/fabrics")} className="hover:text-terracotta transition-colors">Fabrics</a>
           <span>/</span>
-          <a href={`/fabrics/${product.category}`} className="hover:text-terracotta transition-colors capitalize">
+          <a href={withBase(`/fabrics/${product.category}`)} className="hover:text-terracotta transition-colors capitalize">
             {product.category}
           </a>
           <span>/</span>
@@ -74,7 +65,7 @@ export default async function ProductPage({ params }: Props) {
           <AnimatedSection direction="left">
             <div className="aspect-[4/5] overflow-hidden">
               <img
-                src={imageSrc}
+                src={withBase(imageSrc)}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
@@ -133,10 +124,38 @@ export default async function ProductPage({ params }: Props) {
               )}
 
               {/* Colours */}
-              <div className="bg-linen-white border border-sand/40 p-5 text-sm text-charcoal/70 leading-relaxed">
-                <span className="font-semibold text-charcoal block mb-1">Colours Available</span>
-                Multiple shades available — WhatsApp us to receive a shade chart or discuss your colour requirement.
-              </div>
+              {product.colours && product.colours.length > 0 ? (
+                <div className="bg-linen-white border border-sand/40 p-5">
+                  <span className="font-semibold text-charcoal text-sm block mb-4">
+                    {product.colours.length} Colours Available
+                  </span>
+                  <div className="grid grid-cols-5 gap-3">
+                    {product.colours.map((colour) => (
+                      <div key={colour.name} className="flex flex-col items-center gap-1.5">
+                        <div className="w-full aspect-square overflow-hidden border border-sand/50">
+                          <img
+                            src={withBase(colour.image)}
+                            alt={colour.name}
+                            loading="lazy"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <span className="text-[11px] text-charcoal/60 text-center leading-tight">
+                          {colour.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-charcoal/50 mt-4">
+                    Shades may vary slightly from screen. WhatsApp us for a physical shade card.
+                  </p>
+                </div>
+              ) : (
+                <div className="bg-linen-white border border-sand/40 p-5 text-sm text-charcoal/70 leading-relaxed">
+                  <span className="font-semibold text-charcoal block mb-1">Colours Available</span>
+                  Multiple shades available — WhatsApp us to receive a shade chart or discuss your colour requirement.
+                </div>
+              )}
 
               {/* Pricing note */}
               <div className="text-sm text-charcoal/50 border-l-2 border-terracotta pl-4">

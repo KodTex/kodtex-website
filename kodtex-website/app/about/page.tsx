@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import SectionHeading from "@/components/shared/SectionHeading";
 import { wa } from "@/lib/whatsapp";
+import { withBase } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "About KodTex",
@@ -95,7 +96,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="aspect-[3/4] overflow-hidden bg-sand/20">
                   <img
-                    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85"
+                    src={withBase("/images/hero/hero-corduroy-olive.jpg")}
                     alt="Fabric rolls at Kailash Vivek & Co."
                     className="w-full h-full object-cover"
                   />

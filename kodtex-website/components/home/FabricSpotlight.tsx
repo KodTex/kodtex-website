@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "motion/react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { withBase } from "@/lib/paths";
 
 interface SpotlightTag {
   label: string;
@@ -57,7 +58,7 @@ export default function FabricSpotlight({
           {/* Image */}
           <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
-              src={imageSrc}
+              src={withBase(imageSrc)}
               alt={imageAlt}
               className="w-full h-full object-cover"
               style={{ scale: imgScale }}

@@ -25,13 +25,13 @@ export default function Home() {
         body="4-wale to 21-wale. Structured, dobby, stretch, yarn-dyed, indigo wash. Every finish for every application. Built on decades of corduroy expertise from Kailash Vivek & Co."
         ctaLabel="Explore Corduroy"
         ctaHref="/fabrics/corduroy"
-        imageSrc="/images/fabrics/corduroy/14-wale-cotton-corduroy.jpg"
+        imageSrc="/images/hero/hero-corduroy-black.jpg"
         imageAlt="Close-up of corduroy wale texture"
         tags={[
-          { label: "4-wale" },
           { label: "8-wale" },
           { label: "14-wale" },
           { label: "21-wale" },
+          { label: "23-wale" },
           { label: "Stretch" },
           { label: "Yarn-dyed" },
           { label: "Indigo" },
