@@ -5,6 +5,7 @@ import { categories } from "@/data/categories";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import ProductCard from "@/components/fabrics/ProductCard";
 import { wa } from "@/lib/whatsapp";
+import { withBase } from "@/lib/paths";
 
 interface Props {
   params: Promise<{ category: string; slug: string }>;
@@ -50,9 +51,9 @@ export default async function ProductPage({ params }: Props) {
       <div className="max-w-[1320px] mx-auto px-6 md:px-10">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-xs text-charcoal/40 mb-10 pt-4">
-          <a href="/fabrics" className="hover:text-terracotta transition-colors">Fabrics</a>
+          <a href={withBase("/fabrics")} className="hover:text-terracotta transition-colors">Fabrics</a>
           <span>/</span>
-          <a href={`/fabrics/${product.category}`} className="hover:text-terracotta transition-colors capitalize">
+          <a href={withBase(`/fabrics/${product.category}`)} className="hover:text-terracotta transition-colors capitalize">
             {product.category}
           </a>
           <span>/</span>
@@ -64,7 +65,7 @@ export default async function ProductPage({ params }: Props) {
           <AnimatedSection direction="left">
             <div className="aspect-[4/5] overflow-hidden">
               <img
-                src={imageSrc}
+                src={withBase(imageSrc)}
                 alt={product.name}
                 className="w-full h-full object-cover"
               />
@@ -133,7 +134,7 @@ export default async function ProductPage({ params }: Props) {
                       <div key={colour.name} className="flex flex-col items-center gap-1.5">
                         <div className="w-full aspect-square overflow-hidden border border-sand/50">
                           <img
-                            src={colour.image}
+                            src={withBase(colour.image)}
                             alt={colour.name}
                             loading="lazy"
                             className="w-full h-full object-cover"

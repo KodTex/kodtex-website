@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { InstagramIcon } from "@/components/shared/Icons";
 import { wa } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
+import { withBase } from "@/lib/paths";
 
 const navLinks = [
   { href: "/fabrics", label: "Fabrics" },
@@ -63,7 +64,7 @@ export default function Nav() {
             onClick={() => setIsOpen(false)}
           >
             <img
-              src="/images/logo/logo.svg"
+              src={withBase("/images/logo/logo.svg")}
               alt="KodTex"
               className="h-8 w-auto transition-all"
               style={{ filter: isScrolled ? undefined : "drop-shadow(0 1px 4px rgba(0,0,0,0.5))" }}

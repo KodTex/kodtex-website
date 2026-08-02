@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
 import { categories } from "@/data/categories";
+import { withBase } from "@/lib/paths";
 
 const categoryImages: Record<string, string> = {
   corduroy: "/images/hero/hero-corduroy-black.jpg",
@@ -41,7 +42,7 @@ function DesktopHorizontalScroll() {
             >
               <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                style={{ backgroundImage: `url('${categoryImages[cat.slug]}')` }}
+                style={{ backgroundImage: `url('${withBase(categoryImages[cat.slug])}')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/20 to-transparent" />
               <div className="absolute bottom-8 left-7">
@@ -77,7 +78,7 @@ function MobileCategoryCards() {
           <div key={cat.slug} className="relative h-[60vw] min-h-[220px] overflow-hidden">
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: `url('${categoryImages[cat.slug]}')` }}
+              style={{ backgroundImage: `url('${withBase(categoryImages[cat.slug])}')` }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/30 to-warm-black/10" />
             <div className="absolute bottom-5 left-6 right-6">

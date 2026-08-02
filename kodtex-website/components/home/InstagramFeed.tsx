@@ -1,5 +1,6 @@
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { InstagramIcon } from "@/components/shared/Icons";
+import { withBase } from "@/lib/paths";
 
 const placeholderPosts = [
   { id: "1", imageUrl: "/images/hero/hero-corduroy-navy.jpg", alt: "Corduroy fabric close-up" },
@@ -44,7 +45,7 @@ export default function InstagramFeed() {
                 className="block relative aspect-square overflow-hidden group"
               >
                 <img
-                  src={post.imageUrl}
+                  src={withBase(post.imageUrl)}
                   alt={post.alt}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

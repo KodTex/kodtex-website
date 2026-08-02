@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "motion/react";
 import { Product, getWhatsAppUrl, getSampleUrl } from "@/data/products";
 import { cn } from "@/lib/utils";
+import { withBase } from "@/lib/paths";
 
 interface ProductCardProps {
   product: Product;
@@ -11,7 +12,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product, className }: ProductCardProps) {
-  const imageSrc = product.images[0];
+  const imageSrc = withBase(product.images[0]);
 
   return (
     <motion.div

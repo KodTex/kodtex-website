@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import Link from "next/link";
 import { wa } from "@/lib/whatsapp";
+import { withBase } from "@/lib/paths";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -44,7 +45,7 @@ export default async function BlogPostPage({ params }: Props) {
       {post.coverImage && (
         <div className="relative aspect-[21/9] max-h-[480px] overflow-hidden">
           <img
-            src={post.coverImage}
+            src={withBase(post.coverImage)}
             alt={post.title}
             className="w-full h-full object-cover"
           />
@@ -136,7 +137,7 @@ export default async function BlogPostPage({ params }: Props) {
                   {p.coverImage && (
                     <div className="w-20 h-20 flex-shrink-0 overflow-hidden">
                       <img
-                        src={p.coverImage}
+                        src={withBase(p.coverImage)}
                         alt={p.title}
                         className="w-full h-full object-cover"
                       />

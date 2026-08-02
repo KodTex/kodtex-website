@@ -4,6 +4,7 @@ import { useScroll, useTransform, motion } from "motion/react";
 import Link from "next/link";
 import { wa } from "@/lib/whatsapp";
 import { ChevronDown } from "lucide-react";
+import { withBase } from "@/lib/paths";
 
 const heroWords = ["Fabric,", "your", "way."];
 const heroWordClasses: Record<string, string> = {
@@ -27,7 +28,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/hero/hero-corduroy-mdbrown.jpg')`,
+            backgroundImage: `url('${withBase("/images/hero/hero-corduroy-mdbrown.jpg")}')`,
           }}
         />
         {/* Dark overlay for text legibility */}

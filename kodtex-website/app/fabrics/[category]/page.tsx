@@ -5,6 +5,7 @@ import { getProductsByCategory, FabricCategory } from "@/data/products";
 import ProductCard from "@/components/fabrics/ProductCard";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import SectionHeading from "@/components/shared/SectionHeading";
+import { withBase } from "@/lib/paths";
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -47,7 +48,7 @@ export default async function CategoryPage({ params }: Props) {
       <div className="relative h-[50vh] min-h-[360px] flex items-end overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${categoryImages[category]}')` }}
+          style={{ backgroundImage: `url('${withBase(categoryImages[category])}')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-warm-black/80 via-warm-black/40 to-transparent" />
         <div className="relative z-10 max-w-[1320px] mx-auto px-6 md:px-10 pb-12 w-full">

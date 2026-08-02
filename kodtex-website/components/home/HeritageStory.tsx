@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useInView, useMotionValue, useTransform, animate, motion } from "motion/react";
 import AnimatedSection from "@/components/shared/AnimatedSection";
+import { withBase } from "@/lib/paths";
 
 function AnimatedCounter({ target, suffix = "", start }: { target: number; suffix?: string; start: boolean }) {
   const count = useMotionValue(0);
@@ -89,7 +90,7 @@ export default function HeritageStory() {
           <AnimatedSection direction="right" delay={0.15}>
             <div className="relative aspect-[4/5] overflow-hidden">
               <img
-                src="/images/hero/hero-corduroy-navy.jpg"
+                src={withBase("/images/hero/hero-corduroy-navy.jpg")}
                 alt="Fabric rolls at Kailash Vivek & Co. warehouse"
                 className="w-full h-full object-cover"
               />
