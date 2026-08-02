@@ -157,10 +157,27 @@ export default async function ProductPage({ params }: Props) {
                 </div>
               )}
 
-              {/* Pricing note */}
-              <div className="text-sm text-charcoal/50 border-l-2 border-terracotta pl-4">
-                Pricing depends on quantity and customisation. No minimum order.
-                WhatsApp us for an instant quote.
+              {/* How ordering works */}
+              <div className="bg-linen-white border border-sand/40 p-5">
+                <span className="text-xs font-medium tracking-wide uppercase text-charcoal/50 block mb-4">
+                  How Ordering Works
+                </span>
+                <div className="flex flex-col gap-3">
+                  {[
+                    { n: "1", label: "Not sure yet?", body: "Order a paid swatch first — small cut, real fabric, no commitment." },
+                    { n: "2", label: "Ready to order?", body: "Any length works. No minimum order, ever." },
+                    { n: "3", label: "Confirm on WhatsApp", body: "We quote by quantity and customisation, then you place the order." },
+                  ].map((step) => (
+                    <div key={step.n} className="flex items-start gap-3">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-terracotta/10 text-terracotta text-xs font-semibold flex items-center justify-center mt-0.5">
+                        {step.n}
+                      </span>
+                      <p className="text-sm text-charcoal/70 leading-relaxed">
+                        <span className="font-medium text-charcoal">{step.label}</span> {step.body}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
               {/* CTAs */}
@@ -179,7 +196,7 @@ export default async function ProductPage({ params }: Props) {
                   rel="noopener noreferrer"
                   className="flex-1 text-center border-2 border-charcoal text-charcoal text-sm font-semibold tracking-wide py-4 hover:bg-charcoal hover:text-ivory transition-colors"
                 >
-                  Order a Sample
+                  Order a Sample First
                 </a>
               </div>
 

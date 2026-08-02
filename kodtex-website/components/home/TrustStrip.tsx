@@ -33,6 +33,9 @@ export default function TrustStrip() {
               </div>
             ))}
           </div>
+          <p className="text-center text-xs text-charcoal/45 tracking-wide mt-6 pt-6 border-t border-sand/25">
+            Real quotes, no inflated pricing games — every price is a WhatsApp message away.
+          </p>
         </AnimatedSection>
       </div>
     </section>

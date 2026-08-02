@@ -46,13 +46,18 @@ export default function ProductCard({ product, className }: ProductCardProps) {
 
       {/* Content */}
       <div className="p-5 flex flex-col gap-3 flex-1">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <span className="text-[10px] font-semibold tracking-[0.1em] uppercase text-terracotta bg-terracotta/8 border border-terracotta/20 px-2 py-0.5 rounded-sm">
             {product.category}
           </span>
           {product.wale && (
             <span className="text-xs font-medium tracking-[0.08em] text-charcoal/60">
               {product.wale}
+            </span>
+          )}
+          {product.applications[0] && (
+            <span className="text-[10px] font-medium tracking-[0.06em] uppercase text-sage bg-sage/8 border border-sage/25 px-2 py-0.5 rounded-sm">
+              {product.applications[0]}
             </span>
           )}
         </div>
