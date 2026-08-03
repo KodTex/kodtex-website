@@ -5,6 +5,8 @@ import { categories } from "@/data/categories";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import ProductCard from "@/components/fabrics/ProductCard";
 import ProductGallery from "@/components/fabrics/ProductGallery";
+import ColourSwatchGrid from "@/components/fabrics/ColourSwatchGrid";
+import { ProductVisualProvider } from "@/components/fabrics/ProductVisualContext";
 import { wa } from "@/lib/whatsapp";
 import { withBase } from "@/lib/paths";
 
@@ -60,6 +62,7 @@ export default async function ProductPage({ params }: Props) {
           <span className="text-charcoal/60">{product.name}</span>
         </div>
 
+        <ProductVisualProvider>
         <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           {/* Image */}
           <AnimatedSection direction="left">
@@ -119,31 +122,7 @@ export default async function ProductPage({ params }: Props) {
 
               {/* Colours */}
               {product.colours && product.colours.length > 0 ? (
-                <div className="bg-linen-white border border-sand/40 p-5">
-                  <span className="font-semibold text-charcoal text-sm block mb-4">
-                    {product.colours.length} Colours Available
-                  </span>
-                  <div className="grid grid-cols-5 gap-3">
-                    {product.colours.map((colour) => (
-                      <div key={colour.name} className="flex flex-col items-center gap-1.5">
-                        <div className="w-full aspect-square overflow-hidden border border-sand/50">
-                          <img
-                            src={withBase(colour.image)}
-                            alt={colour.name}
-                            loading="lazy"
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <span className="text-[11px] text-charcoal/60 text-center leading-tight">
-                          {colour.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                  <p className="text-xs text-charcoal/50 mt-4">
-                    Shades may vary slightly from screen. WhatsApp us for a physical shade card.
-                  </p>
-                </div>
+                <ColourSwatchGrid colours={product.colours} />
               ) : (
                 <div className="bg-linen-white border border-sand/40 p-5 text-sm text-charcoal/70 leading-relaxed">
                   <span className="font-semibold text-charcoal block mb-1">Colours Available</span>
@@ -216,6 +195,7 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </AnimatedSection>
         </div>
+        </ProductVisualProvider>
 
         {/* Related Products */}
         {related.length > 0 && (

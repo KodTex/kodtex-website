@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, AnimatePresence } from "motion/react";
 import { Product, getWhatsAppUrl, getSampleUrl } from "@/data/products";
 import { cn } from "@/lib/utils";
 import { withBase } from "@/lib/paths";
@@ -11,8 +12,30 @@ interface ProductCardProps {
   className?: string;
 }
 
+const MAX_VISIBLE_SWATCHES = 6;
+
 export default function ProductCard({ product, className }: ProductCardProps) {
-  const imageSrc = withBase(product.images[0]);
+  // Only real mice/trackpads get hover-preview; touch relies on tap-to-pin below.
+  const [canHover, setCanHover] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    setCanHover(mq.matches);
+    const listener = (e: MediaQueryListEvent) => setCanHover(e.matches);
+    mq.addEventListener("change", listener);
+    return () => mq.removeEventListener("change", listener);
+  }, []);
+
+  const [previewIdx, setPreviewIdx] = useState<number | null>(null);
+  const [pinnedIdx, setPinnedIdx] = useState<number | null>(null);
+
+  const activeIdx = previewIdx ?? pinnedIdx;
+  const activeColour = activeIdx !== null ? product.colours?.[activeIdx] : undefined;
+  const imageSrc = withBase(activeColour ? activeColour.image : product.images[0]);
+  const imageAlt = activeColour ? `${product.name} — ${activeColour.name}` : product.name;
+
+  const swatches = product.colours ?? [];
+  const visibleSwatches = swatches.slice(0, MAX_VISIBLE_SWATCHES);
+  const extraCount = swatches.length - visibleSwatches.length;
 
   return (
     <motion.div
@@ -25,14 +48,21 @@ export default function ProductCard({ product, className }: ProductCardProps) {
         href={`/fabrics/${product.category}/${product.slug}`}
         className="block relative aspect-[4/3] overflow-hidden"
       >
-        <img
-          src={imageSrc}
-          alt={product.name}
-          loading="lazy"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        <AnimatePresence initial={false}>
+          <motion.img
+            key={imageSrc}
+            src={imageSrc}
+            alt={imageAlt}
+            loading="lazy"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </AnimatePresence>
         {/* Hover overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+        <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none">
           <span className="text-white text-xs font-medium tracking-wide translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
             View Range →
           </span>
@@ -67,6 +97,39 @@ export default function ProductCard({ product, className }: ProductCardProps) {
             {product.name}
           </h3>
         </Link>
+
+        {visibleSwatches.length > 0 && (
+          <div
+            role="group"
+            aria-label={`${product.name} colours`}
+            className="flex items-center gap-1.5 flex-wrap"
+          >
+            {visibleSwatches.map((colour, i) => (
+              <button
+                key={colour.name}
+                type="button"
+                aria-label={`Preview ${colour.name}`}
+                aria-pressed={pinnedIdx === i}
+                title={colour.name}
+                onMouseEnter={() => canHover && setPreviewIdx(i)}
+                onMouseLeave={() => canHover && setPreviewIdx(null)}
+                onFocus={() => setPreviewIdx(i)}
+                onBlur={() => setPreviewIdx(null)}
+                onClick={() => setPinnedIdx((prev) => (prev === i ? null : i))}
+                style={{ backgroundImage: `url(${withBase(colour.image)})` }}
+                className={cn(
+                  "w-[18px] h-[18px] rounded-full border bg-cover bg-center flex-shrink-0 transition-transform hover:scale-110",
+                  pinnedIdx === i
+                    ? "border-terracotta ring-2 ring-terracotta/40"
+                    : "border-sand/50"
+                )}
+              />
+            ))}
+            {extraCount > 0 && (
+              <span className="text-[10px] text-charcoal/40">+{extraCount} more</span>
+            )}
+          </div>
+        )}
 
         <p className="text-charcoal/60 text-sm leading-relaxed flex-1 line-clamp-2">
           {product.shortDescription}
