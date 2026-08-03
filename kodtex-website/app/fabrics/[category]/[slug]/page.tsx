@@ -4,6 +4,7 @@ import { products, getProductBySlug, getRelatedProducts, getWhatsAppUrl, getSamp
 import { categories } from "@/data/categories";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import ProductCard from "@/components/fabrics/ProductCard";
+import ProductGallery from "@/components/fabrics/ProductGallery";
 import { wa } from "@/lib/whatsapp";
 import { withBase } from "@/lib/paths";
 
@@ -36,7 +37,6 @@ export default async function ProductPage({ params }: Props) {
   const related = getRelatedProducts(product, 3);
   const whatsappUrl = getWhatsAppUrl(product);
   const sampleUrl = getSampleUrl(product);
-  const imageSrc = product.images[0];
 
   const specRows = [
     { label: "Composition", value: product.composition },
@@ -63,13 +63,7 @@ export default async function ProductPage({ params }: Props) {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           {/* Image */}
           <AnimatedSection direction="left">
-            <div className="aspect-[4/5] overflow-hidden">
-              <img
-                src={withBase(imageSrc)}
-                alt={product.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <ProductGallery images={product.images} alt={product.name} />
           </AnimatedSection>
 
           {/* Details */}
